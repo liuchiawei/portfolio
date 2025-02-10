@@ -18,11 +18,11 @@ export default function MobileNav({ navItems, className }: { navItems: NavItemPr
       animate={isOpen ? "open" : "closed"}
       custom={height}
       ref={containerRef}
-      className={cn("w-full z-50", isOpen && "fixed inset-0", className)}
+      className={cn("w-full z-50 fixed", className)}
     >
       <motion.div
         variants={sidebarVariants}
-        className="w-full md:w-[360px] absolute top-0 right-0 bottom-0 bg-yellow-300"
+        className="w-full md:w-[360px] absolute top-0 right-0 bottom-0 bg-accent/40 backdrop-blur-sm"
       />
       <Navigation isOpen={isOpen} navItems={navItems} />
       <MenuToggle toggle={() => setIsOpen(!isOpen)} />
@@ -79,7 +79,7 @@ const MenuItem = ({ item }: { item: NavItemProps }) => {
     >
       <Link href={item.href} className="flex items-center justify-center gap-4">
         {item.icon}
-        <div className="text-2xl w-24">{item.labelEN}</div>
+        <div className="text-4xl w-36">{item.labelEN}</div>
       </Link>
     </motion.li>
   );
