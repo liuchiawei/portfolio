@@ -4,21 +4,29 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import type { Variants } from "motion/react";
 import * as motion from "motion/react-client";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { NavItemProps } from "@/lib/props";
 
-export default function MobileNav({ navItems, className }: { navItems: NavItemProps[], className?: string }) {
+export default function MobileNav({
+  navItems,
+  className,
+}: {
+  navItems: NavItemProps[];
+  className?: string;
+}) {
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  const { height } = useDimensions(containerRef);
   return (
     <motion.nav
       initial={false}
       animate={isOpen ? "open" : "closed"}
-      custom={height}
       ref={containerRef}
-      className={cn("w-full z-50 fixed", className)}
+      className={cn(
+        "z-50 fixed top-0 left-0 right-0 transition-all duration-300",
+        className,
+        isOpen ? "bottom-0" : "bottom-full delay-500"
+      )}
     >
       <motion.div
         variants={sidebarVariants}
@@ -39,7 +47,13 @@ const navVariants: Variants = {
   },
 };
 
-const Navigation = ({ isOpen, navItems }: { isOpen: boolean, navItems: NavItemProps[] }) => (
+const Navigation = ({
+  isOpen,
+  navItems,
+}: {
+  isOpen: boolean;
+  navItems: NavItemProps[];
+}) => (
   <motion.ul
     variants={navVariants}
     className={`p-10 absolute right-0 top-1/2 -translate-y-1/2 list-none select-none w-full md:w-[360px] flex-col gap-8 items-center justify-center ${
@@ -153,24 +167,3 @@ const MenuToggle = ({ toggle }: { toggle: () => void }) => (
     </svg>
   </Button>
 );
-
-/**
- * ==============   Utils   ================
- */
-
-// Naive implementation - in reality would want to attach
-// a window or resize listener. Also use state/layoutEffect instead of ref/effect
-// if this is important to know on initial client render.
-// It would be safer to  return null for unmeasured states.
-const useDimensions = (ref: React.RefObject<HTMLDivElement | null>) => {
-  const dimensions = useRef({ width: 0, height: 0 });
-
-  useEffect(() => {
-    if (ref.current) {
-      dimensions.current.width = ref.current.offsetWidth;
-      dimensions.current.height = ref.current.offsetHeight;
-    }
-  }, [ref]);
-
-  return dimensions.current;
-};

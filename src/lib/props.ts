@@ -5,4 +5,7 @@ export interface NavItemProps {
   icon: React.ReactNode;
 }
 
-
+export interface TimelineEntry {
+  title: string;
+  content: React.ReactNode;
+}

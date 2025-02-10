@@ -45,7 +45,7 @@ export default function Nav() {
   const isMobile = useIsMobile();
   if (isMobile) return <MobileNav navItems={navItems} />;
   return (
-    <div className="sticky p-4 top-0 z-20 bg-background/80 backdrop-blur-sm border-b border-foreground flex justify-center md:justify-between items-end">
+    <div className="sticky p-4 top-0 z-20 bg-background/40 backdrop-blur-sm border-b border-foreground flex justify-center md:justify-between items-end">
       <div className="text-4xl font-black text-center">DOUBLECHEAP</div>
       <NavigationMenu>
           <NavigationMenuList>

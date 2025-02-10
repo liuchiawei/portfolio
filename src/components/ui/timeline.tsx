@@ -1,16 +1,7 @@
 "use client";
-import {
-  useMotionValueEvent,
-  useScroll,
-  useTransform,
-  motion,
-} from "framer-motion";
+import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-
-interface TimelineEntry {
-  title: string;
-  content: React.ReactNode;
-}
+import { TimelineEntry } from "@/lib/props";
 
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const ref = useRef<HTMLDivElement>(null);

@@ -3,6 +3,8 @@ import { Roboto, Roboto_Mono, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Analytics } from "@vercel/analytics/react";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
@@ -42,7 +44,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Nav />
           {children}
+          <Footer name="Liu Chiawei" />
         </ThemeProvider>
         <Analytics />
       </body>
