@@ -1,42 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 import type { Variants } from "motion/react";
 import * as motion from "motion/react-client";
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { House, UserRound, BookImage, Mail } from "lucide-react";
-import { NavItem } from "@/lib/props";
+import { NavItemProps } from "@/lib/props";
 
-const navItems: NavItem[] = [
-  {
-    labelEN: "Home",
-
-    labelJP: "ホーム",
-    href: "/",
-    icon: <House />,
-  },
-  {
-    labelEN: "About",
-    labelJP: "プロフィール",
-    href: "/about",
-    icon: <UserRound />,
-  },
-  {
-    labelEN: "Works",
-    labelJP: "作品一覧",
-    href: "/works",
-    icon: <BookImage />,
-  },
-  {
-    labelEN: "Contact",
-    labelJP: "お問い合わせ",
-    href: "/contact",
-    icon: <Mail />,
-  },
-];
-
-export default function MobileNav() {
+export default function MobileNav({ navItems, className }: { navItems: NavItemProps[], className?: string }) {
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const { height } = useDimensions(containerRef);
@@ -46,19 +18,19 @@ export default function MobileNav() {
       animate={isOpen ? "open" : "closed"}
       custom={height}
       ref={containerRef}
-      className="w-full"
+      className={cn("w-full z-50", isOpen && "fixed inset-0", className)}
     >
       <motion.div
         variants={sidebarVariants}
         className="w-full md:w-[360px] absolute top-0 right-0 bottom-0 bg-yellow-300"
       />
-      <Navigation isOpen={isOpen} />
+      <Navigation isOpen={isOpen} navItems={navItems} />
       <MenuToggle toggle={() => setIsOpen(!isOpen)} />
     </motion.nav>
   );
 }
 
-const navVariants = {
+const navVariants: Variants = {
   open: {
     transition: { staggerChildren: 0.07, delayChildren: 0.2 },
   },
@@ -67,7 +39,7 @@ const navVariants = {
   },
 };
 
-const Navigation = ({ isOpen }: { isOpen: boolean }) => (
+const Navigation = ({ isOpen, navItems }: { isOpen: boolean, navItems: NavItemProps[] }) => (
   <motion.ul
     variants={navVariants}
     className={`p-10 absolute right-0 top-1/2 -translate-y-1/2 list-none select-none w-full md:w-[360px] flex-col gap-8 items-center justify-center ${
@@ -80,7 +52,7 @@ const Navigation = ({ isOpen }: { isOpen: boolean }) => (
   </motion.ul>
 );
 
-const itemVariants = {
+const itemVariants: Variants = {
   open: {
     y: 0,
     opacity: 1,
@@ -97,7 +69,7 @@ const itemVariants = {
   },
 };
 
-const MenuItem = ({ item }: { item: NavItem }) => {
+const MenuItem = ({ item }: { item: NavItemProps }) => {
   return (
     <motion.li
       className="cursor-pointer"
@@ -113,8 +85,8 @@ const MenuItem = ({ item }: { item: NavItem }) => {
   );
 };
 
-//
-const sidebarVariants = {
+// Sidebar Open/Close Style
+const sidebarVariants: Variants = {
   open: (height = 1000) => ({
     clipPath: `circle(${height * 2 + 200}px at calc(100% - 40px) 40px)`,
     transition: {
@@ -150,11 +122,12 @@ const Path = (props: PathProps) => (
   />
 );
 
+// Toggle Hamburger Button
 const MenuToggle = ({ toggle }: { toggle: () => void }) => (
   <Button
     variant="ghost"
     onClick={toggle}
-    className="w-[50px] h-[50px] absolute top-4 right-4 cursor-pointer bg-transparent border-none bg-white user-select-none"
+    className="size-10 absolute top-4 right-4 cursor-pointer bg-transparent border-none bg-white user-select-none"
   >
     <svg width="23" height="23" viewBox="0 0 23 23">
       <Path

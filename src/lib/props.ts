@@ -1,4 +1,4 @@
-export interface NavItem {
+export interface NavItemProps {
   labelEN: string;
   labelJP: string;
   href: string;

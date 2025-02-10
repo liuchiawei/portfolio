@@ -1,9 +1,8 @@
-import MobileNav from "@/components/MobileNav";
-
+import Nav from "@/components/Nav";
 export default function Home() {
   return (
     <main>
-      <MobileNav />
+      <Nav />
       <h1>Hello World</h1>
       <h2>TODO: Intro Animation</h2>
       <h2>TODO: Navbar Top | About | Works | Contact</h2>
