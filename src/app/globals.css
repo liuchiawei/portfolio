@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+@plugin '@nauverse/tailwind-dot-grid-backgrounds';
 @plugin 'tailwindcss-animate';
 
 @custom-variant dark (&:is(.dark *));
@@ -69,8 +70,8 @@
 }
 
 :root {
-  --background: hsl(0 0% 100%);
-  --foreground: hsl(224 71.4% 4.1%);
+  --background: oklch(0.97 0.001 106.424); /* --color-stone-100 */
+  --foreground: oklch(0.147 0.004 49.25); /* --color-stone-950 */
   --card: hsl(0 0% 100%);
   --card-foreground: hsl(224 71.4% 4.1%);
   --popover: hsl(0 0% 100%);
@@ -96,8 +97,8 @@
   --radius: 0.5rem;
 }
 .dark {
-  --background: hsl(224 71.4% 4.1%);
-  --foreground: hsl(210 20% 98%);
+  --background: oklch(0.216 0.006 56.043); /* --color-stone-900 */
+  --foreground: oklch(0.97 0.001 106.424); /* --color-stone-100 */
   --card: hsl(224 71.4% 4.1%);
   --card-foreground: hsl(210 20% 98%);
   --popover: hsl(224 71.4% 4.1%);

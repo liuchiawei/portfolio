@@ -44,6 +44,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+        {/* TODO: isHome (intro animation) */}
           <Nav />
           {children}
           <Footer name="Liu Chiawei" />
