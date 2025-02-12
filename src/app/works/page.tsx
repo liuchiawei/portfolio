@@ -35,7 +35,7 @@ export default function Works() {
       // 更新頁碼，準備下次請求
       setPage((prev) => prev + 1);
     } catch (error) {
-      console.error("載入資料時發生錯誤：", error);
+      console.error("データの読み込み中にエラーが発生しました：", error);
     }
   };
 
@@ -44,15 +44,19 @@ export default function Works() {
       dataLength={items.length} // 目前資料的筆數
       next={fetchWorks} // 捲到底部時呼叫此函式
       hasMore={hasMore} // 是否還有更多資料
-      loader={<h4>載入中...</h4>}
+      loader={
+        <div className="flex justify-center items-center h-30">
+          <div className="animate-spin rounded-full size-12 border-t-2 border-b-2 border-l-2 border-gray-900 dark:border-white"></div>
+        </div>
+      }
       endMessage={<p className="text-center my-4">すべて読み込み完了!</p>}
     >
       <WorksGrid className="w-full p-4 mx-auto">
-        {items.map((item, i) => (
+        {items.map((item) => (
           <WorksGridItem
             key={item.id}
             work={item}
-            className={i % 7 === 0 ? "md:col-span-2 md:row-span-2" : ""}
+            className={item.id % 7 === 1 ? "md:col-span-2 md:row-span-2" : ""}
           />
         ))}
       </WorksGrid>

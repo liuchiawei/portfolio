@@ -5,109 +5,279 @@
     "year": 2024,
     "type": "web",
     "description": "作品1の説明"
-  },
-  {
+  }, {
     "id": 2,
     "title": "作品2",
     "image": "/images/works/work2.jpg",
     "year": 2024,
     "type": "illustration",
-    "description": "作品1の説明"
-  },
-  {
+    "description": "作品2の説明"
+  }, {
     "id": 3,
     "title": "Archilab",
     "image": "/images/works/archilab.png",
     "year": 2024,
     "type": "illustration",
-    "description": "作品1の説明"
-  },
-  {
+    "description": "建築コンセプトイラスト"
+  }, {
     "id": 4,
     "title": "作品4",
     "image": "/images/works/work4.jpg",
     "year": 2024,
     "type": "illustration",
-    "description": "作品1の説明"
-  },
-  {
+    "description": "作品4の説明"
+  }, {
     "id": 5,
     "title": "作品5",
     "image": "/images/works/work5.jpg",
     "year": 2024,
     "type": "graphic design",
-    "description": "作品1の説明"
-  },
-  {
+    "description": "ポスターのデザイン"
+  }, {
     "id": 6,
     "title": "作品6",
     "image": "/images/works/work6.jpg",
     "year": 2024,
     "type": "graphic design",
-    "description": "作品1の説明"
-  },
-  {
+    "description": "名刺デザイン"
+  }, {
     "id": 7,
     "title": "作品7",
     "image": "/images/works/work7.jpg",
     "year": 2024,
     "type": "graphic design",
-    "description": "作品1の説明"
-  },
-  {
+    "description": "ブランドロゴデザイン"
+  }, {
     "id": 8,
     "title": "データベースとは？",
     "image": "/images/works/infographic_db.png",
     "year": 2024,
     "type": "infographic",
-    "description": "作品1の説明"
-  },
-  {
+    "description": "データベースの基礎概念を解説するインフォグラフィック"
+  }, {
     "id": 9,
     "title": "ファイティン！",
     "image": "/images/works/fighters.png",
     "year": 2023,
     "type": "illustration",
-    "description": "作品1の説明"
-  },
-  {
+    "description": "スポーツ選手向け応援イラスト"
+  }, {
     "id": 10,
     "title": "作品10",
     "image": "/images/works/work10.jpg",
     "year": 2024,
     "type": "graphic design",
-    "description": "作品1の説明"
-  },
-  {
+    "description": "雑誌の表紙デザイン"
+  }, {
     "id": 11,
     "title": "作品11",
     "image": "/images/works/work11.jpg",
     "year": 2024,
     "type": "graphic design",
-    "description": "作品1の説明"
-  },
-  {
+    "description": "企業広告デザイン"
+  }, {
     "id": 12,
     "title": "櫛稲",
     "image": "/images/works/kushunada.png",
     "year": 2022,
     "type": "illustration",
-    "description": "株式会社櫛稲公式サイトのイラスト。"
-  },
-  {
+    "description": "株式会社櫛稲公式サイトのイラスト"
+  }, {
     "id": 13,
     "title": "ボクサー忍者",
     "image": "/images/works/ninja.png",
     "year": 2023,
     "type": "logo design",
-    "description": "作品1の説明"
-  },
-  {
+    "description": "スポーツブランドのロゴ"
+  }, {
     "id": 14,
     "title": "作品14",
     "image": "/images/works/work14.jpg",
     "year": 2024,
     "type": "graphic design",
-    "description": "作品1の説明"
+    "description": "広告バナー"
+  }, {
+    "id": 15,
+    "title": "作品15",
+    "image": "/images/works/work15.jpg",
+    "year": 2024,
+    "type": "web",
+    "description": "企業の公式サイトデザイン"
+  }, {
+    "id": 16,
+    "title": "未来都市",
+    "image": "/images/works/futurecity.png",
+    "year": 2024,
+    "type": "illustration",
+    "description": "未来都市のコンセプトアート"
+  }, {
+    "id": 17,
+    "title": "作品17",
+    "image": "/images/works/work17.jpg",
+    "year": 2023,
+    "type": "graphic design",
+    "description": "カフェのブランドロゴ"
+  }, {
+    "id": 18,
+    "title": "作品18",
+    "image": "/images/works/work18.jpg",
+    "year": 2023,
+    "type": "graphic design",
+    "description": "カフェのブランドロゴ"
+  },
+  {
+    "id": 19,
+    "title": "作品19",
+    "image": "/images/works/work19.jpg",
+    "year": 2024,
+    "type": "web",
+    "description": "ポートフォリオサイト"
+  }, {
+    "id": 20,
+    "title": "作品20",
+    "image": "/images/works/work20.jpg",
+    "year": 2024,
+    "type": "graphic design",
+    "description": "ポスターアート"
+  }, {
+    "id": 21,
+    "title": "作品21",
+    "image": "/images/works/work21.jpg",
+    "year": 2024,
+    "type": "illustration",
+    "description": "キャラクターデザイン"
+  }, {
+    "id": 22,
+    "title": "作品22",
+    "image": "/images/works/work22.jpg",
+    "year": 2024,
+    "type": "web",
+    "description": "ランディングページデザイン"
+  }, {
+    "id": 23,
+    "title": "作品23",
+    "image": "/images/works/work23.jpg",
+    "year": 2024,
+    "type": "infographic",
+    "description": "データ可視化デザイン"
+  }, {
+    "id": 24,
+    "title": "作品24",
+    "image": "/images/works/work24.jpg",
+    "year": 2024,
+    "type": "logo design",
+    "description": "企業ロゴデザイン"
+  }, {
+    "id": 25,
+    "title": "作品25",
+    "image": "/images/works/work25.jpg",
+    "year": 2024,
+    "type": "illustration",
+    "description": "風景画"
+  }, {
+    "id": 26,
+    "title": "作品26",
+    "image": "/images/works/work26.jpg",
+    "year": 2024,
+    "type": "web",
+    "description": "Eコマースサイトデザイン"
+  }, {
+    "id": 27,
+    "title": "作品27",
+    "image": "/images/works/work27.jpg",
+    "year": 2024,
+    "type": "graphic design",
+    "description": "SNS広告デザイン"
+  }, {
+    "id": 28,
+    "title": "作品28",
+    "image": "/images/works/work28.jpg",
+    "year": 2024,
+    "type": "infographic",
+    "description": "サステナビリティに関するデザイン"
+  }, {
+    "id": 29,
+    "title": "作品29",
+    "image": "/images/works/work29.jpg",
+    "year": 2024,
+    "type": "illustration",
+    "description": "動物イラスト"
+  }, {
+    "id": 30,
+    "title": "作品30",
+    "image": "/images/works/work30.jpg",
+    "year": 2024,
+    "type": "infographic",
+    "description": "環境問題に関するインフォグラフィック"
+  }, {
+    "id": 31,
+    "title": "作品31",
+    "image": "/images/works/work31.jpg",
+    "year": 2024,
+    "type": "illustration",
+    "description": "キャラクターデザイン"
+  }, {
+    "id": 32,
+    "title": "作品32",
+    "image": "/images/works/work32.jpg",
+    "year": 2024,
+    "type": "web",
+    "description": "ランディングページデザイン"
+  }, {
+    "id": 33,
+    "title": "作品33",
+    "image": "/images/works/work33.jpg",
+    "year": 2024,
+    "type": "infographic",
+    "description": "データ可視化デザイン"
+  }, {
+    "id": 34,
+    "title": "作品34",
+    "image": "/images/works/work34.jpg",
+    "year": 2024,
+    "type": "logo design",
+    "description": "企業ロゴデザイン"
+  }, {
+    "id": 35,
+    "title": "作品35",
+    "image": "/images/works/work35.jpg",
+    "year": 2024,
+    "type": "illustration",
+    "description": "風景画"
+  }, {
+    "id": 36,
+    "title": "作品36",
+    "image": "/images/works/work36.jpg",
+    "year": 2024,
+    "type": "web",
+    "description": "Eコマースサイトデザイン"
+  }, {
+    "id": 37,
+    "title": "作品37",
+    "image": "/images/works/work37.jpg",
+    "year": 2024,
+    "type": "graphic design",
+    "description": "SNS広告デザイン"
+  }, {
+    "id": 38,
+    "title": "作品38",
+    "image": "/images/works/work28.jpg",
+    "year": 2024,
+    "type": "infographic",
+    "description": "サステナビリティに関するデザイン"
+  }, {
+    "id": 39,
+    "title": "作品39",
+    "image": "/images/works/work29.jpg",
+    "year": 2024,
+    "type": "illustration",
+    "description": "動物イラスト"
+  }, {
+    "id": 40,
+    "title": "作品40",
+    "image": "/images/works/work30.jpg",
+    "year": 2024,
+    "type": "infographic",
+    "description": "環境問題に関するインフォグラフィック"
   }
 ]
