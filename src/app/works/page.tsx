@@ -1,11 +1,54 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import InfiniteScroll from "react-infinite-scroll-component";
+import axios from "axios";
 import { WorksGrid, WorksGridItem } from "@/components/ui/WorksGrid";
 import { WorksProps } from "@/lib/props";
 
 export default function Works() {
+  // 管理目前載入的作品資料、頁數與是否還有更多資料
+  const [items, setItems] = useState<WorksProps[]>([]);
+  const [page, setPage] = useState<number>(1);
+  const [hasMore, setHasMore] = useState<boolean>(true);
+  const limit = 10; // 每次載入 10 筆資料
+
+  // 初次載入時呼叫 fetchWorks 取得第一批資料
+  useEffect(() => {
+    fetchWorks();
+  }, []);
+
+  // 使用 axios 向 API 取得資料
+  const fetchWorks = async () => {
+    try {
+      const response = await axios.get("/api/works", {
+        params: { page, limit },
+      });
+      const newItems: WorksProps[] = response.data;
+      // 將新資料加到現有的資料中
+      setItems((prev) => [...prev, ...newItems]);
+
+      // 如果新取得的資料筆數小於 limit，表示已無更多資料
+      if (newItems.length < limit) {
+        setHasMore(false);
+      }
+      // 更新頁碼，準備下次請求
+      setPage((prev) => prev + 1);
+    } catch (error) {
+      console.error("載入資料時發生錯誤：", error);
+    }
+  };
+
   return (
-    <main role="main">
+    <InfiniteScroll
+      dataLength={items.length} // 目前資料的筆數
+      next={fetchWorks} // 捲到底部時呼叫此函式
+      hasMore={hasMore} // 是否還有更多資料
+      loader={<h4>載入中...</h4>}
+      endMessage={<p className="text-center my-4">すべて読み込み完了!</p>}
+    >
       <WorksGrid className="w-full p-4 mx-auto">
-        {works.map((item, i) => (
+        {items.map((item, i) => (
           <WorksGridItem
             key={item.id}
             work={item}
@@ -13,121 +56,6 @@ export default function Works() {
           />
         ))}
       </WorksGrid>
-    </main>
+    </InfiniteScroll>
   );
 }
-
-const works: WorksProps[] = [
-  {
-    id: 1,
-    title: "作品1",
-    image: "/images/works/work1.jpg",
-    year: 2024,
-    type: "web",
-    description: "作品1の説明",
-  },
-  {
-    id: 2,
-    title: "作品2",
-    image: "/images/works/work2.jpg",
-    year: 2024,
-    type: "illustration",
-    description: "作品1の説明",
-  },
-  {
-    id: 3,
-    title: "Archilab",
-    image: "/images/works/archilab.png",
-    year: 2024,
-    type: "illustration",
-    description: "作品1の説明",
-  },
-  {
-    id: 4,
-    title: "作品4",
-    image: "/images/works/work4.jpg",
-    year: 2024,
-    type: "illustration",
-    description: "作品1の説明",
-  },
-  {
-    id: 5,
-    title: "作品5",
-    image: "/images/works/work5.jpg",
-    year: 2024,
-    type: "graphic design",
-    description: "作品1の説明",
-  },
-  {
-    id: 6,
-    title: "作品6",
-    image: "/images/works/work6.jpg",
-    year: 2024,
-    type: "graphic design",
-    description: "作品1の説明",
-  },
-  {
-    id: 7,
-    title: "作品7",
-    image: "/images/works/work7.jpg",
-    year: 2024,
-    type: "graphic design",
-    description: "作品1の説明",
-  },
-  {
-    id: 8,
-    title: "データベースとは？",
-    image: "/images/works/infographic_db.png",
-    year: 2024,
-    type: "infographic",
-    description: "作品1の説明",
-  },
-  {
-    id: 9,
-    title: "ファイティン！",
-    image: "/images/works/fighters.png",
-    year: 2023,
-    type: "illustration",
-    description: "作品1の説明",
-  },
-  {
-    id: 10,
-    title: "作品10",
-    image: "/images/works/work10.jpg",
-    year: 2024,
-    type: "graphic design",
-    description: "作品1の説明",
-  },
-  {
-    id: 11,
-    title: "作品11",
-    image: "/images/works/work11.jpg",
-    year: 2024,
-    type: "graphic design",
-    description: "作品1の説明",
-  },
-  {
-    id: 12,
-    title: "櫛稲",
-    image: "/images/works/kushunada.png",
-    year: 2022,
-    type: "illustration",
-    description: "株式会社櫛稲公式サイトのイラスト。",
-  },
-  {
-    id: 13,
-    title: "ボクサー忍者",
-    image: "/images/works/ninja.png",
-    year: 2023,
-    type: "logo design",
-    description: "作品1の説明",
-  },
-  {
-    id: 14,
-    title: "作品14",
-    image: "/images/works/work14.jpg",
-    year: 2024,
-    type: "graphic design",
-    description: "作品1の説明",
-  },
-];
