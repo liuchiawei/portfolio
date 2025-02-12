@@ -8,6 +8,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import MobileNav from "./MobileNav";
 import ThemeToggle from "./ThemeToggle";
 import { Button } from "@/components/ui/button";
+import SlideUpLetters from "@/components/SlideUpLetters";
 import {
   NavigationMenu,
   NavigationMenuList,
@@ -46,7 +47,7 @@ export default function Nav() {
   if (isMobile) return <MobileNav navItems={navItems} />;
   return (
     <div className="sticky p-6 top-0 z-20 bg-background/40 backdrop-blur-sm border-b-1 border-foreground flex justify-center md:justify-between items-end">
-      <div className="text-4xl font-black text-center">DOUBLECHEAP</div>
+      <SlideUpLetters text="DOUBLECHEAP" className="text-4xl font-black text-center" />
       <NavigationMenu>
           <NavigationMenuList>
             {navItems.map((item) => (

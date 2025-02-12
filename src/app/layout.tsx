@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { Analytics } from "@vercel/analytics/react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
@@ -48,6 +49,7 @@ export default function RootLayout({
           <Nav />
           {children}
           <Footer name="Liu Chiawei" />
+          <BackToTop />
         </ThemeProvider>
         <Analytics />
       </body>

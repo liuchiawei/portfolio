@@ -9,8 +9,8 @@ export default function BackToTop() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // height of the Button to show: 852px( iPhone 14 Pro )
-      if (window.scrollY > 852) {
+      // height of the Button to show: 720px
+      if (window.scrollY > 720) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
