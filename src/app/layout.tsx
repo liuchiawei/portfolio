@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="ja" suppressHydrationWarning>
       <body
-        className={`${roboto.variable} ${robotoMono.variable} ${notoSansJP.variable} antialiased`}
+        className={`${roboto.variable} ${robotoMono.variable} ${notoSansJP.variable} bg-dot-28-s-2-foreground/30 antialiased`}
       >
         <ThemeProvider
           attribute="class"
@@ -44,7 +44,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-        {/* TODO: isHome (intro animation) */}
+          {/* TODO: isHome (intro animation) */}
           <Nav />
           {children}
           <Footer name="Liu Chiawei" />

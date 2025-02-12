@@ -6,6 +6,17 @@ export interface NavItemProps {
 }
 
 export interface TimelineEntry {
+  year: number;
   title: string;
   content: React.ReactNode;
+  emoji: string;
+}
+
+export interface WorksProps {
+  id: number;
+  title: string;
+  image: string;
+  year: number;
+  type: string;
+  description: string;
 }

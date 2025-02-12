@@ -1,7 +1,11 @@
 "use client";
+import Image from "next/image";
 import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card";
 import ReactCardFlip from "react-card-flip";
 import { useState } from "react";
+import * as motion from "motion/react-client";
+import type { Variants } from "motion/react";
+import { Send } from "lucide-react";
 
 export default function NameCard() {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -16,7 +20,7 @@ export default function NameCard() {
     <ReactCardFlip
       isFlipped={isFlipped}
       flipDirection="horizontal"
-      containerClassName="w-full max-w-160 md:max-w-200 h-screen md:h-132 mx-auto rounded-none md:rounded-[60px] bg-dot-6-s-2-foreground/50 p-6"
+      containerClassName="w-full max-w-160 md:max-w-200 h-screen max-h-[780px] md:h-132 mx-auto rounded-none md:rounded-[60px] bg-dot-6-s-2-foreground/40 p-6"
     >
       {/* カードの正面 */}
       <CardContainer
@@ -27,28 +31,69 @@ export default function NameCard() {
       >
         <CardBody className="bg-white w-full h-full rounded-3xl shadow-xl border">
           <div
-            className="grid grid-cols-1 md:grid-cols-2 gap-1 items-center cursor-pointer px-8 py-4 w-full h-full **:data-primary-text:text-stone-950 **:data-secondary-text:text-stone-400 *:text-center *:md:text-left *:w-full hover:**:data-image:drop-shadow-xl"
+            className="grid grid-cols-1 md:grid-cols-2 gap-2 p-8 items-center cursor-pointer w-full h-full **:data-primary-text:text-stone-950 **:data-secondary-text:text-stone-400 *:text-center *:md:text-left *:w-full hover:**:data-image:drop-shadow-xl"
             onClick={handleFlip}
           >
+            {/* 画像 */}
             <CardItem
-              translateZ={50}
-              className="row-span-3 flex justify-center items-center"
+              translateZ={80}
+              className="row-span-4 flex justify-center items-center"
             >
-              <div data-image className="size-60 bg-gray-500 rounded-full">
-                motion.div with pop up animation
-              </div>
+              <motion.div
+                data-image
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ amount: 0.4 }}
+                className="bg-accent-gradient rounded-full size-64 md:size-68 overflow-hidden z-0 flex justify-center items-center"
+              >
+                <motion.div
+                  variants={scrollUpItemVariants}
+                  className="size-78 md:size-82"
+                >
+                  <Image
+                    src="/images/profile.svg"
+                    alt="profile"
+                    fill
+                    className="object-cover"
+                  />
+                </motion.div>
+              </motion.div>
             </CardItem>
-            <CardItem translateZ={80} className="row-span-2">
-              <h3 data-secondary-text className="text-2xl mb-2">
-                リュウチャーウェイ
+            {/* サブタイトル */}
+            <CardItem translateZ={60}>
+              <h3 data-secondary-text className="text-sm md:text-lg">
+                Graphic Designer / Frontend Engineer / Illustrator
               </h3>
-              <h1 data-primary-text className="text-4xl md:text-6xl font-black">
-                Liu Chiawei
-              </h1>
             </CardItem>
-            <CardItem translateZ={50}>
-              <h3 data-secondary-text className="text-sm md:text-md">
-                Illustrator / Graphic Designer / Web Designer
+            {/* 名前 */}
+            <CardItem translateZ={100} className="row-span-2">
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                data-secondary-text
+                className="text-xl md:text-2xl mb-2"
+              >
+                リュウ チャーウェイ
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                data-primary-text
+                className="text-5xl md:text-6xl font-black"
+              >
+                Liu Chiawei
+              </motion.div>
+            </CardItem>
+            {/* メールアドレス */}
+            <CardItem
+              translateZ={40}
+              className="flex justify-center md:justify-start items-center gap-4"
+            >
+              <Send data-secondary-text className="size-6" />
+              <h3 data-secondary-text className="text-md md:text-2xl">
+                doublecheap@gmail.com
               </h3>
             </CardItem>
           </div>
@@ -61,7 +106,7 @@ export default function NameCard() {
         }`}
         className="w-full h-full"
       >
-        <CardBody className="bg-stone-50 w-full h-full rounded-3xl shadow-xl border">
+        <CardBody className="bg-stone-200 w-full h-full rounded-3xl shadow-xl border">
           <div
             className="grid grid-cols-1 md:grid-cols-2 gap-1 items-center cursor-pointer px-8 py-4 w-full h-full **:data-primary-text:text-stone-950 **:data-secondary-text:text-stone-400 *:text-center *:md:text-left *:w-full hover:**:data-image:drop-shadow-xl"
             onClick={handleFlip}
@@ -87,3 +132,19 @@ export default function NameCard() {
     </ReactCardFlip>
   );
 }
+
+const scrollUpItemVariants: Variants = {
+  offscreen: {
+    y: 300,
+    scale: 0.7,
+  },
+  onscreen: {
+    y: 0,
+    scale: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 1,
+    },
+  },
+};
