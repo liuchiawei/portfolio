@@ -1,13 +1,13 @@
 "use client";
-import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import emailjs from "emailjs-com";
 import { Icon } from "@iconify/react";
 
 const SERVICE_ID = "service_7u1ldpv";
 const TEMPLATE_ID = "template_oouc4qp";
-const PUBLIC_KEY = "MoSMqKk9pgn6q157X";
+const PUBLIC_KEY = "1oVQZvkvHnGTmGUl9";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -16,6 +16,10 @@ export default function Contact() {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  useEffect(() => {
+    emailjs.init(PUBLIC_KEY);
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
