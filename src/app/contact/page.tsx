@@ -5,11 +5,8 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Icon } from "@iconify/react";
 
-const SERVICE_ID = "service_7u1ldpv";
-const TEMPLATE_ID = "template_oouc4qp";
-const PUBLIC_KEY = "1oVQZvkvHnGTmGUl9";
-
 export default function Contact() {
+  
   const [formData, setFormData] = useState({
     from_name: "",
     reply_to: "",
@@ -18,7 +15,7 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
-    emailjs.init(PUBLIC_KEY);
+    emailjs.init(process.env.PUBLIC_KEY || "");
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -26,7 +23,12 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
-      await emailjs.send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY);
+      await emailjs.send(
+        process.env.SERVICE_ID || "",
+        process.env.TEMPLATE_ID || "",
+        formData,
+        process.env.PUBLIC_KEY || ""
+      );
       alert("メッセージが送信されました！");
       setFormData({ from_name: "", reply_to: "", message: "" });
     } catch (error) {
