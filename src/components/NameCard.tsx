@@ -99,7 +99,7 @@ export default function NameCard() {
               className="hover:**:data-secondary-text:text-neutral-600 hover:**:data-secondary-text:font-bold hover:**:data-icon:-translate-y-1 hover:**:data-icon:translate-x-1"
             >
               <Link
-                href="mailto:doublecheap@gmail.com"
+                href="/contact"
                 data-secondary-text
                 className="text-md md:text-2xl transition-all duration-300 flex justify-center md:justify-start items-center gap-4 "
               >
