@@ -11,8 +11,8 @@ const PUBLIC_KEY = "MoSMqKk9pgn6q157X";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
+    from_name: "",
+    reply_to: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -24,7 +24,7 @@ export default function Contact() {
     try {
       await emailjs.send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY);
       alert("メッセージが送信されました！");
-      setFormData({ name: "", email: "", message: "" });
+      setFormData({ from_name: "", reply_to: "", message: "" });
     } catch (error) {
       console.error("メッセージの送信に失敗しました：", error);
       alert("送信に失敗しました。もう一度お試しください。");
@@ -66,8 +66,10 @@ export default function Contact() {
             type="text"
             required
             className="w-full px-4 py-3 rounded-lg border border-foreground/20 bg-background"
-            value={formData.name}
-            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+            value={formData.from_name}
+            onChange={(e) =>
+              setFormData({ ...formData, from_name: e.target.value })
+            }
           />
         </motion.div>
 
@@ -86,9 +88,9 @@ export default function Contact() {
             type="email"
             required
             className="w-full px-4 py-3 rounded-lg border border-foreground/20 bg-background"
-            value={formData.email}
+            value={formData.reply_to}
             onChange={(e) =>
-              setFormData({ ...formData, email: e.target.value })
+              setFormData({ ...formData, reply_to: e.target.value })
             }
           />
         </motion.div>
