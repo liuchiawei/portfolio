@@ -28,11 +28,14 @@ export default function MobileNav({
         isOpen ? "bottom-0" : "bottom-full delay-500"
       )}
     >
+      {/* モバイルナビゲーションの背景 */}
       <motion.div
         variants={sidebarVariants}
-        className="w-full md:w-[360px] absolute top-0 right-0 bottom-0 bg-accent/40 backdrop-blur-sm"
+        className="w-full md:w-[360px] absolute top-0 right-0 bottom-0 bg-accent/60 backdrop-blur-sm"
       />
+      {/* モバイルナビゲーションのコンテンツ */}
       <Navigation isOpen={isOpen} navItems={navItems} />
+      {/* ビゲーションのボタン */}
       <MenuToggle toggle={() => setIsOpen(!isOpen)} />
     </motion.nav>
   );
@@ -91,9 +94,12 @@ const MenuItem = ({ item }: { item: NavItemProps }) => {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <Link href={item.href} className="flex items-center justify-center gap-4">
+      <Link
+        href={item.href}
+        className="flex items-center justify-center gap-4 text-white text-4xl"
+      >
         {item.icon}
-        <div className="text-4xl w-36">{item.labelEN}</div>
+        <div className="w-36 font-bold">{item.labelEN}</div>
       </Link>
     </motion.li>
   );

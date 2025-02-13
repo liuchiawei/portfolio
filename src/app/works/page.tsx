@@ -7,6 +7,7 @@ import { WorksGrid, WorksGridItem } from "@/components/ui/WorksGrid";
 import { WorksProps } from "@/lib/props";
 import { Icon } from "@iconify/react";
 import { Skeleton } from "@/components/ui/skeleton";
+import { motion } from "framer-motion";
 
 export default function Works() {
   // 管理目前載入的作品資料、頁數與是否還有更多資料
@@ -69,11 +70,19 @@ export default function Works() {
       loader={<LoadingSkeleton />}
       endMessage={<p className="text-center my-8">すべて読み込み完了!</p>}
     >
+      <motion.h1
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="text-4xl font-bold mb-12 mt-6 text-center"
+      >
+        作品一覧
+      </motion.h1>
       <WorksGrid className="w-full p-4 mx-auto">
         {uniqueItems.map((item, index) => (
           <WorksGridItem
             key={item.id}
             work={item}
+            index={index}
             className={
               // indexの1の位が0または7の場合、2x2のサイズを占める
               (index % 10) % 7 === 0 ? "md:col-span-2 md:row-span-2" : ""

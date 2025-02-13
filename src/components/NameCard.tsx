@@ -31,12 +31,12 @@ export default function NameCard() {
     >
       {/* カードの正面 */}
       <CardContainer
-        containerClassName={`w-full h-full transition-all duration-300 ${
+        containerClassName={`w-full h-full transition-all ${
           isFlipped ? "opacity-0" : ""
         }`}
         className="w-full h-full"
       >
-        <CardBody className="bg-white w-full h-full rounded-3xl shadow-xl border">
+        <CardBody className="bg-white w-full h-full rounded-3xl shadow-xl">
           <div
             className="grid grid-cols-1 md:grid-cols-2 gap-2 p-8 items-center cursor-pointer w-full h-full **:data-primary-text:text-stone-950 **:data-secondary-text:text-stone-400 *:text-center *:md:text-left *:w-full hover:**:data-image:drop-shadow-xl"
             onClick={handleFlip}
@@ -83,15 +83,24 @@ export default function NameCard() {
               >
                 リュウ チャーウェイ
               </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                data-primary-text
-                className="text-5xl md:text-6xl font-black"
-              >
-                Liu Chiawei
-              </motion.div>
+              <TooltipProvider>
+                <Tooltip delayDuration={100}>
+                  <TooltipTrigger asChild>
+                    <motion.div
+                      initial={{ opacity: 0, y: 50 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5 }}
+                      data-primary-text
+                      className="text-5xl md:text-6xl font-black"
+                    >
+                      Liu Chiawei
+                    </motion.div>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>クリックしてもっと見る</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
             </CardItem>
             {/* メールアドレス */}
             <CardItem
@@ -101,12 +110,12 @@ export default function NameCard() {
               <Link
                 href="/contact"
                 data-secondary-text
-                className="text-md md:text-2xl transition-all duration-300 flex justify-center md:justify-start items-center gap-4 "
+                className="text-md md:text-2xl transition-all flex justify-center md:justify-start items-center gap-4 "
               >
                 <Send
                   data-secondary-text
                   data-icon
-                  className="size-6 transition-all duration-300 delay-200"
+                  className="size-6 transition-all delay-200"
                 />
                 <TooltipProvider>
                   <Tooltip delayDuration={100}>
@@ -125,12 +134,12 @@ export default function NameCard() {
       </CardContainer>
       {/* カードの裏面 */}
       <CardContainer
-        containerClassName={`w-full h-full transition-all transition-all duration-300 ${
+        containerClassName={`w-full h-full transition-all ${
           isFlipped ? "" : "opacity-0"
         }`}
         className="w-full h-full"
       >
-        <CardBody className="bg-stone-200 w-full h-full rounded-3xl shadow-xl border">
+        <CardBody className="bg-stone-200 w-full h-full rounded-3xl shadow-xl">
           <div
             className="grid grid-cols-1 md:grid-cols-2 gap-1 items-center cursor-pointer px-8 py-4 w-full h-full **:data-primary-text:text-stone-950 **:data-secondary-text:text-stone-400 *:text-center *:md:text-left *:w-full hover:**:data-image:drop-shadow-xl"
             onClick={handleFlip}
