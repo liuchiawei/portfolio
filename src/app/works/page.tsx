@@ -22,6 +22,7 @@ export default function Works() {
     setPage(1); // 重設頁碼
     setHasMore(true); // 重設更多資料的標示
     fetchWorks();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // 使用 axios 向 API 取得資料
