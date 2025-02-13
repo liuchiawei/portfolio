@@ -23,9 +23,9 @@ const navItems: NavItemProps[] = [
     icon: <House />,
   },
   {
-    labelEN: "About",
+    labelEN: "Profile",
     labelJP: "私について",
-    href: "/about",
+    href: "/profile",
     icon: <UserRound />,
   },
   {
@@ -47,7 +47,9 @@ export default function Nav() {
   if (isMobile) return <MobileNav navItems={navItems} />;
   return (
     <div className="sticky p-6 top-0 z-20 bg-background/40 backdrop-blur-sm border-b-1 border-foreground flex justify-center md:justify-between items-end">
-      <SlideUpLetters text="DOUBLECHEAP" className="text-4xl font-black text-center" />
+      <Link href="/">
+        <SlideUpLetters text="DOUBLECHEAP" className="text-4xl font-black text-center" />
+      </Link>
       <NavigationMenu>
           <NavigationMenuList>
             {navItems.map((item) => (

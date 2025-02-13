@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function BackToTop() {
@@ -23,18 +23,26 @@ export default function BackToTop() {
     };
   }, []);
 
-  const handleClick = () => {
+  const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const scrollToBottom = () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+  };
+
   return (
-    <Button
-      className={`${
+    <div
+      className={`flex items-center justify-center gap-2 fixed bottom-8 right-8 transition-opacity duration-300 *:cursor-pointer ${
         isVisible ? "opacity-100" : "opacity-0"
-      } fixed bottom-8 right-8 cursor-pointer transition-opacity duration-300`}
-      onClick={handleClick}
+      }`}
     >
-      <ArrowUp className="w-4 h-4" />
-    </Button>
+      <Button onClick={scrollToTop}>
+        <ArrowUp className="w-4 h-4" />
+      </Button>
+      <Button onClick={scrollToBottom}>
+        <ArrowDown className="w-4 h-4" />
+      </Button>
+    </div>
   );
 }

@@ -13,7 +13,7 @@ export const WorksGrid = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-4 gap-4 max-w-7xl mx-auto ",
+        "grid grid-cols-1 md:grid-cols-4 gap-4 max-w-7xl mx-auto",
         className
       )}
     >
@@ -33,7 +33,7 @@ export const WorksGridItem = ({
     <Link
       href={`/works/${work.id}`}
       className={cn(
-        "group/grids p-8 gap-4 flex flex-col justify-between rounded-3xl hover:shadow-xl transition duration-200 shadow-input dark:shadow-none dark:bg-stone-800 bg-stone-50 hover:-translate-y-2 overflow-hidden",
+        "group/grids p-8 gap-4 flex flex-col justify-between rounded-3xl hover:shadow-xl transition duration-200 shadow-input dark:shadow-none dark:bg-neutral-800 bg-neutral-50 hover:-translate-y-2 overflow-hidden",
         className
       )}
     >

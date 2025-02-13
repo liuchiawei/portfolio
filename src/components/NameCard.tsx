@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import Image from "next/image";
 import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card";
 import ReactCardFlip from "react-card-flip";
@@ -6,6 +7,12 @@ import { useState } from "react";
 import * as motion from "motion/react-client";
 import type { Variants } from "motion/react";
 import { Send } from "lucide-react";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 export default function NameCard() {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -89,12 +96,29 @@ export default function NameCard() {
             {/* メールアドレス */}
             <CardItem
               translateZ={40}
-              className="flex justify-center md:justify-start items-center gap-4"
+              className="hover:**:data-secondary-text:text-neutral-600 hover:**:data-secondary-text:font-bold hover:**:data-icon:-translate-y-1 hover:**:data-icon:translate-x-1"
             >
-              <Send data-secondary-text className="size-6" />
-              <h3 data-secondary-text className="text-md md:text-2xl">
-                doublecheap@gmail.com
-              </h3>
+              <Link
+                href="mailto:doublecheap@gmail.com"
+                data-secondary-text
+                className="text-md md:text-2xl transition-all duration-300 flex justify-center md:justify-start items-center gap-4 "
+              >
+                <Send
+                  data-secondary-text
+                  data-icon
+                  className="size-6 transition-all duration-300 delay-200"
+                />
+                <TooltipProvider>
+                  <Tooltip delayDuration={100}>
+                    <TooltipTrigger asChild>
+                      <h2>doublecheap@gmail.com</h2>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>メール送ってね</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              </Link>
             </CardItem>
           </div>
         </CardBody>
