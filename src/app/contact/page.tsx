@@ -5,17 +5,20 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Icon } from "@iconify/react";
 
+const SERVICE_ID = "service_7u1ldpv";
+const TEMPLATE_ID = "template_bcovs1m";
+const PUBLIC_KEY = "1oVQZvkvHnGTmGUl9";
+
 export default function Contact() {
-  
   const [formData, setFormData] = useState({
-    from_name: "",
-    reply_to: "",
+    user_name: "",
+    user_email: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
-    emailjs.init(process.env.PUBLIC_KEY || "");
+    emailjs.init(PUBLIC_KEY);
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -24,13 +27,13 @@ export default function Contact() {
 
     try {
       await emailjs.send(
-        process.env.SERVICE_ID || "",
-        process.env.TEMPLATE_ID || "",
+        SERVICE_ID,
+        TEMPLATE_ID,
         formData,
-        process.env.PUBLIC_KEY || ""
+        PUBLIC_KEY
       );
       alert("メッセージが送信されました！");
-      setFormData({ from_name: "", reply_to: "", message: "" });
+      setFormData({ user_name: "", user_email: "", message: "" });
     } catch (error) {
       console.error("メッセージの送信に失敗しました：", error);
       alert("送信に失敗しました。もう一度お試しください。");
@@ -72,9 +75,9 @@ export default function Contact() {
             type="text"
             required
             className="w-full px-4 py-3 rounded-lg border border-foreground/20 bg-background"
-            value={formData.from_name}
+            value={formData.user_name}
             onChange={(e) =>
-              setFormData({ ...formData, from_name: e.target.value })
+              setFormData({ ...formData, user_name: e.target.value })
             }
           />
         </motion.div>
@@ -94,9 +97,9 @@ export default function Contact() {
             type="email"
             required
             className="w-full px-4 py-3 rounded-lg border border-foreground/20 bg-background"
-            value={formData.reply_to}
+            value={formData.user_email}
             onChange={(e) =>
-              setFormData({ ...formData, reply_to: e.target.value })
+              setFormData({ ...formData, user_email: e.target.value })
             }
           />
         </motion.div>
