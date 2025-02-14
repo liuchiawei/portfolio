@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { NavItemProps } from "@/lib/props";
 import { House, UserRound, BookImage, Mail } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
@@ -64,6 +65,8 @@ export default function Nav() {
 
 
 const NavItem = ({ item }: { item: NavItemProps }) => {
+  const pathname = usePathname();
+  const isActive = pathname === item.href;
   const [isHovered, setIsHovered] = useState(false);
   const handleMouseEnter = () => setIsHovered(true);
   const handleMouseLeave = () => setIsHovered(false);
@@ -76,9 +79,15 @@ const NavItem = ({ item }: { item: NavItemProps }) => {
       <AnimatePresence>
         <Link
           href={item.href}
-          className="flex justify-center items-center overflow-hidden relative *:text-center *:font-bold *:text-xl *:w-36 *:cursor-pointer"
+          className={`flex justify-center items-center overflow-hidden relative *:text-center *:font-bold *:text-xl *:w-38 *:cursor-pointer transition-all ${
+            isActive ? "*:data-active:bg-foreground text-background" : ""
+          }`}
         >
-          <Button variant="ghost" className="rounded-full">
+          <Button
+            data-active={isActive}
+            variant="ghost"
+            className="rounded-lg"
+          >
             {!isHovered && (
               <motion.div
                 key="en"
@@ -97,7 +106,7 @@ const NavItem = ({ item }: { item: NavItemProps }) => {
                 animate={{ y: 0 }} // アニメーション中の位置 (hover時に下から中に移動)
                 exit={{ y: 26 }} // 終了位置
                 transition={{ duration: 0.3 }} // アニメーションの持続時間
-                className="text-stone-950"
+                className={`${isActive ? "text-background" : "text-stone-950"}`}
               >
                 {item.labelJP}
               </motion.div>
