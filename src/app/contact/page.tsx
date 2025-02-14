@@ -1,15 +1,14 @@
 "use client";
 import emailjs from "@emailjs/browser";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Icon } from "@iconify/react";
 
-const SERVICE_ID = "service_7u1ldpv";
-const TEMPLATE_ID = "template_bcovs1m";
-const PUBLIC_KEY = "1oVQZvkvHnGTmGUl9";
-
 export default function Contact() {
+  const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
+  const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+  const PUBLIC_KEY = process.env.NEXT_PUBLIC_PUBLIC_KEY;
   const [formData, setFormData] = useState({
     user_name: "",
     user_email: "",
@@ -17,21 +16,18 @@ export default function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  useEffect(() => {
-    emailjs.init(PUBLIC_KEY);
-  }, []);
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-
-    try {
-      await emailjs.send(
-        SERVICE_ID,
-        TEMPLATE_ID,
-        formData,
-        PUBLIC_KEY
+    if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
+      alert(
+        "申し訳ありません。只今メールサービスが利用できません。"
       );
+      setIsSubmitting(false);
+      return;
+    }
+    try {
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY);
       alert("メッセージが送信されました！");
       setFormData({ user_name: "", user_email: "", message: "" });
     } catch (error) {
