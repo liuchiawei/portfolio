@@ -18,5 +18,8 @@ export interface WorksProps {
   image: string;
   year: number;
   type: string;
+  category: string;
+  client?: string;
   description: string;
+  link?: string;
 }

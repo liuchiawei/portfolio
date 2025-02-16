@@ -1,283 +1,338 @@
 [{
     "id": 1,
-    "title": "作品1",
-    "image": "/images/works/work1.jpg",
+    "title": "Ninetendo Timeline",
+    "image": "/images/works/nintendo.png",
     "year": 2024,
     "type": "web",
-    "description": "作品1の説明"
+    "category": "オリジナル",
+    "description": "任天堂ゲーム機の歴史サイト",
+    "link": "https://nintendo-timeline.vercel.app/"
   }, {
     "id": 2,
-    "title": "作品2",
+    "title": "世界を変える企業",
     "image": "/images/works/work2.jpg",
     "year": 2024,
-    "type": "illustration",
+    "type": "web",
+    "category": "オリジナル",
     "description": "作品2の説明"
   }, {
     "id": 3,
-    "title": "Archilab",
+    "title": "Deep Shinjuku",
     "image": "/images/works/archilab.png",
     "year": 2024,
-    "type": "illustration",
-    "description": "建築コンセプトイラスト"
+    "type": "web",
+    "category": "オリジナル",
+    "description": "新宿の怪談サイト"
   }, {
     "id": 4,
-    "title": "作品4",
+    "title": "MBTIテスト",
     "image": "/images/works/work4.jpg",
     "year": 2024,
     "type": "illustration",
+    "category": "オリジナル",
     "description": "作品4の説明"
   }, {
     "id": 5,
-    "title": "作品5",
+    "title": "俺との相性テスト",
     "image": "/images/works/work5.jpg",
     "year": 2024,
-    "type": "graphic design",
+    "type": "graphic",
+    "category": "オリジナル",
     "description": "ポスターのデザイン"
   }, {
     "id": 6,
-    "title": "作品6",
-    "image": "/images/works/work6.jpg",
+    "title": "サムライソウル",
+    "image": "/images/works/samurai_soul_thumb.jpg",
     "year": 2024,
-    "type": "graphic design",
-    "description": "名刺デザイン"
+    "type": "illustration",
+    "category": "オリジナル",
+    "description": "サムライソウルのアルバムイラスト"
   }, {
     "id": 7,
-    "title": "作品7",
-    "image": "/images/works/work7.jpg",
+    "title": "インターネットの歴史",
+    "image": "/images/works/internet_history.svg",
     "year": 2024,
-    "type": "graphic design",
-    "description": "ブランドロゴデザイン"
+    "type": "infographic",
+    "category": "オリジナル",
+    "description": "インターネットの歴史"
   }, {
     "id": 8,
     "title": "データベースとは？",
-    "image": "/images/works/infographic_db.png",
+    "image": "/images/works/database.svg",
     "year": 2024,
     "type": "infographic",
+    "category": "オリジナル",
     "description": "データベースの基礎概念を解説するインフォグラフィック"
   }, {
     "id": 9,
+    "title": "サムライソウル",
+    "image": "/images/works/samurai_soul_thumb.jpg",
+    "year": 2024,
+    "type": "illustration",
+    "category": "オリジナル",
+    "description": "サムライソウルのアルバムイラスト"
+  }, {
+    "id": 10,
     "title": "ファイティン！",
     "image": "/images/works/fighters.png",
     "year": 2023,
     "type": "illustration",
+    "category": "顧客依頼",
+    "client": "拳擊交流同好會",
     "description": "スポーツ選手向け応援イラスト"
   }, {
-    "id": 10,
-    "title": "作品10",
-    "image": "/images/works/work10.jpg",
-    "year": 2024,
-    "type": "graphic design",
-    "description": "雑誌の表紙デザイン"
-  }, {
     "id": 11,
-    "title": "作品11",
-    "image": "/images/works/work11.jpg",
-    "year": 2024,
-    "type": "graphic design",
-    "description": "企業広告デザイン"
-  }, {
-    "id": 12,
-    "title": "櫛稲",
+    "title": "櫛稲の群像",
     "image": "/images/works/kushunada.png",
-    "year": 2022,
+    "year": 2024,
     "type": "illustration",
+    "category": "顧客依頼",
+    "client": "株式会社櫛稲",
     "description": "株式会社櫛稲公式サイトのイラスト"
   }, {
-    "id": 13,
+    "id": 12,
     "title": "ボクサー忍者",
-    "image": "/images/works/ninja.png",
-    "year": 2023,
-    "type": "logo design",
-    "description": "スポーツブランドのロゴ"
+    "image": "/images/works/ninja.svg",
+    "year": 2022,
+    "type": "logo",
+    "category": "顧客依頼",
+    "client": "非公開",
+    "description": "ボクサーのロゴデザイン"
+  }, {
+    "id": 13,
+    "title": "ムエタイ狼牙",
+    "image": "/images/works/muaythaiwu_logo.svg",
+    "year": 2022,
+    "type": "logo",
+    "category": "顧客依頼",
+    "client": "非公開",
+    "description": "格闘技選手のロゴデザイン"
   }, {
     "id": 14,
-    "title": "作品14",
-    "image": "/images/works/work14.jpg",
-    "year": 2024,
-    "type": "graphic design",
-    "description": "広告バナー"
+    "title": "夢を語る",
+    "image": "/images/works/poster_eastwest_thumbnail.jpg",
+    "year": 2022,
+    "type": "illustration",
+    "category": "顧客依頼",
+    "client": "日本語学校イストウェスト",
+    "description": "日本語学校イストウェストのスピーチコンテストポスターデザイン"
   }, {
     "id": 15,
     "title": "作品15",
     "image": "/images/works/work15.jpg",
     "year": 2024,
     "type": "web",
+    "category": "顧客依頼",
     "description": "企業の公式サイトデザイン"
   }, {
     "id": 16,
-    "title": "未来都市",
+    "title": "ヨガ動物",
     "image": "/images/works/futurecity.png",
     "year": 2024,
     "type": "illustration",
+    "category": "オリジナル",
     "description": "未来都市のコンセプトアート"
   }, {
     "id": 17,
     "title": "作品17",
     "image": "/images/works/work17.jpg",
     "year": 2023,
-    "type": "graphic design",
+    "type": "graphic",
+    "category": "オリジナル",
     "description": "カフェのブランドロゴ"
   }, {
     "id": 18,
-    "title": "作品18",
-    "image": "/images/works/work18.jpg",
+    "title": "シェアリングエコノミー新時代",
+    "image": "/images/works/yahoo_news.svg",
     "year": 2023,
-    "type": "graphic design",
-    "description": "カフェのブランドロゴ"
+    "type": "graphic",
+    "category": "顧客依頼",
+    "client": "Yahoo!TW",
+    "description": "Yahoo!TVのSNS広告イラスト"
   },
   {
     "id": 19,
-    "title": "作品19",
-    "image": "/images/works/work19.jpg",
-    "year": 2024,
+    "title": "台湾百岳図鑑",
+    "image": "/images/works/mountain_100.svg",
+    "year": 2020,
     "type": "web",
-    "description": "ポートフォリオサイト"
+    "category": "オリジナル",
+    "description": "台湾の最も高い100座の山を図解"
   }, {
     "id": 20,
-    "title": "作品20",
-    "image": "/images/works/work20.jpg",
-    "year": 2024,
-    "type": "graphic design",
-    "description": "ポスターアート"
+    "title": "スポーツ図鑑",
+    "image": "/images/works/sports_thumb.svg",
+    "year": 2020,
+    "type": "graphic",
+    "category": "オリジナル",
+    "description": "スポーツの図鑑"
   }, {
     "id": 21,
-    "title": "作品21",
-    "image": "/images/works/work21.jpg",
-    "year": 2024,
-    "type": "illustration",
-    "description": "キャラクターデザイン"
+    "title": "町の人々",
+    "image": "/images/works/isometric_people.svg",
+    "year": 2018,
+    "type": "graphic",
+    "category": "オリジナル",
+    "description": "都市に住んでいる人々のイラスト"
   }, {
     "id": 22,
-    "title": "作品22",
-    "image": "/images/works/work22.jpg",
-    "year": 2024,
+    "title": "感染症ポストカード",
+    "image": "/images/works/tourguide.svg",
+    "year": 2018,
     "type": "web",
-    "description": "ランディングページデザイン"
+    "category": "顧客依頼",
+    "client": "Info2Act",
+    "description": "世界の観光地における感染症ガイドライン"
   }, {
     "id": 23,
-    "title": "作品23",
-    "image": "/images/works/work23.jpg",
-    "year": 2024,
-    "type": "infographic",
+    "title": "中秋三大恐怖奇談",
+    "image": "/images/works/moon_fest_thumb.svg",
+    "year": 2018,
+    "type": "graphic",
+    "category": "顧客依頼",
+    "client": "Info2Act",
     "description": "データ可視化デザイン"
   }, {
     "id": 24,
-    "title": "作品24",
-    "image": "/images/works/work24.jpg",
-    "year": 2024,
-    "type": "logo design",
-    "description": "企業ロゴデザイン"
+    "title": "台北のスカイライン",
+    "image": "/images/works/tpe_skyline.svg",
+    "year": 2018,
+    "type": "graphic",
+    "category": "オリジナル",
+    "description": "台北のスカイラインイラスト"
   }, {
     "id": 25,
-    "title": "作品25",
-    "image": "/images/works/work25.jpg",
-    "year": 2024,
-    "type": "illustration",
-    "description": "風景画"
+    "title": "図解台北古城門",
+    "image": "/images/works/tpe_gate_thumb.svg",
+    "year": 2017,
+    "type": "graphic",
+    "category": "オリジナル",
+    "description": "台北古城門のビジュアルガイド"
   }, {
     "id": 26,
-    "title": "作品26",
-    "image": "/images/works/work26.jpg",
-    "year": 2024,
-    "type": "web",
-    "description": "Eコマースサイトデザイン"
+    "title": "雷神図鑑",
+    "image": "/images/works/thundergod_thumb.svg",
+    "year": 2016,
+    "type": "infographic",
+    "category": "オリジナル",
+    "description": "世界神話の雷神図鑑"
   }, {
     "id": 27,
-    "title": "作品27",
-    "image": "/images/works/work27.jpg",
-    "year": 2024,
-    "type": "graphic design",
-    "description": "SNS広告デザイン"
+    "title": "死神図鑑",
+    "image": "/images/works/deathgod_thumb.svg",
+    "year": 2016,
+    "type": "infographic",
+    "category": "オリジナル",
+    "description": "世界神話の死神図鑑"
   }, {
     "id": 28,
-    "title": "作品28",
-    "image": "/images/works/work28.jpg",
-    "year": 2024,
-    "type": "infographic",
-    "description": "サステナビリティに関するデザイン"
+    "title": "人間のあるある",
+    "image": "/images/works/asynodia.svg",
+    "year": 2015,
+    "type": "graphic",
+    "category": "顧客依頼",
+    "client": "非公開",
+    "description": "人間のイラスト"
   }, {
     "id": 29,
-    "title": "作品29",
-    "image": "/images/works/work29.jpg",
-    "year": 2024,
-    "type": "illustration",
-    "description": "動物イラスト"
+    "title": "台湾もののけ図鑑",
+    "image": "/images/works/mononoke_thumb-01.svg",
+    "year": 2016,
+    "type": "infographic",
+    "category": "オリジナル",
+    "description": "図解台湾のもののけ、魔神仔"
   }, {
     "id": 30,
-    "title": "作品30",
-    "image": "/images/works/work30.jpg",
-    "year": 2024,
+    "title": "職場にいるいるあいつ達",
+    "image": "/images/works/mononoke_thumb-02.svg",
+    "year": 2016,
     "type": "infographic",
-    "description": "環境問題に関するインフォグラフィック"
+    "category": "オリジナル",
+    "description": "職場によくいる人を集めたイラスト"
   }, {
     "id": 31,
-    "title": "作品31",
-    "image": "/images/works/work31.jpg",
-    "year": 2024,
-    "type": "illustration",
-    "description": "キャラクターデザイン"
+    "title": "Nike Airmax95 誕生の裏側",
+    "image": "/images/works/nike.svg",
+    "year": 2015,
+    "type": "graphic",
+    "category": "顧客依頼",
+    "client": "Nike",
+    "description": "Nike Airmax95 20周年記念キャンペーンのSNS広告デザイン"
   }, {
     "id": 32,
-    "title": "作品32",
-    "image": "/images/works/work32.jpg",
-    "year": 2024,
-    "type": "web",
-    "description": "ランディングページデザイン"
+    "title": "NBAファイナル戦力図鑑",
+    "image": "/images/works/nba_final_2015_thumb.svg",
+    "year": 2015,
+    "type": "infographic",
+    "category": "オリジナル",
+    "description": "2015年NBAファイナル両チーム戦力の図解"
   }, {
     "id": 33,
-    "title": "作品33",
-    "image": "/images/works/work33.jpg",
-    "year": 2024,
-    "type": "infographic",
-    "description": "データ可視化デザイン"
+    "title": "新しい台北",
+    "image": "/images/works/tpe_2015.svg",
+    "year": 2015,
+    "type": "graphic",
+    "category": "顧客依頼",
+    "client": "台北市政府",
+    "description": "台北の福祉政策SNS広告デザイン"
   }, {
     "id": 34,
-    "title": "作品34",
-    "image": "/images/works/work34.jpg",
-    "year": 2024,
-    "type": "logo design",
-    "description": "企業ロゴデザイン"
+    "title": "Ford New Focus",
+    "image": "/images/works/ford_focus_thumb.svg",
+    "year": 2015,
+    "type": "graphic",
+    "category": "顧客依頼",
+    "client": "Ford",
+    "description": "フォード・ニュー・フォーカスのイラスト"
   }, {
     "id": 35,
-    "title": "作品35",
-    "image": "/images/works/work35.jpg",
-    "year": 2024,
-    "type": "illustration",
-    "description": "風景画"
+    "title": "艾雷島",
+    "image": "/images/works/isle_of_skye_thumb.svg",
+    "year": 2015,
+    "type": "infographic",
+    "category": "顧客依頼",
+    "description": "世界神話の死神図鑑"
   }, {
     "id": 36,
-    "title": "作品36",
-    "image": "/images/works/work36.jpg",
-    "year": 2024,
-    "type": "web",
-    "description": "Eコマースサイトデザイン"
+    "title": "台湾の炭素排出",
+    "image": "/images/works/gas_tw.svg",
+    "year": 2014,
+    "type": "infographic",
+    "category": "顧客依頼",
+    "client": "台湾環境保護署",
+    "description": "台湾の炭素排出量の統計調査報告デザイン"
   }, {
     "id": 37,
-    "title": "作品37",
-    "image": "/images/works/work37.jpg",
-    "year": 2024,
-    "type": "graphic design",
-    "description": "SNS広告デザイン"
+    "title": "台湾のがん",
+    "image": "/images/works/cancer_2012.svg",
+    "year": 2013,
+    "type": "infographic",  
+    "category": "オリジナル",
+    "description": "台湾がん統計調査報告デザイン"
   }, {
     "id": 38,
-    "title": "作品38",
-    "image": "/images/works/work28.jpg",
-    "year": 2024,
+    "title": "台湾憲兵",
+    "image": "/images/works/mp_suit_thumb.svg",
+    "year": 2013,
     "type": "infographic",
-    "description": "サステナビリティに関するデザイン"
+    "category": "オリジナル",
+    "description": "台湾憲兵の紹介イラスト"
   }, {
     "id": 39,
-    "title": "作品39",
+    "title": "EATME",
     "image": "/images/works/work29.jpg",
     "year": 2024,
     "type": "illustration",
+    "category": "顧客依頼",
+    "client": "EATME Inc.",
     "description": "動物イラスト"
   }, {
     "id": 40,
-    "title": "作品40",
-    "image": "/images/works/work30.jpg",
-    "year": 2024,
+    "title": "スコヴィルスケール",
+    "image": "/images/works/scoville_thumb.svg",
+    "year": 2012,
     "type": "infographic",
-    "description": "環境問題に関するインフォグラフィック"
+    "category": "オリジナル",
+    "description": "スコヴィル値のインフォグラフィックデザイン"
   }
 ]

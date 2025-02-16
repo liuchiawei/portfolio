@@ -37,7 +37,7 @@ export const WorksGridItem = ({
     <Link
       href={`/works/${work.id}`}
       className={cn(
-        "group/grids p-8 gap-4 flex flex-col justify-between rounded-3xl hover:shadow-xl transition duration-200 shadow-input dark:shadow-none dark:bg-neutral-800 bg-neutral-50 hover:-translate-y-2 overflow-hidden",
+        "group/grids p-8 gap-4 flex flex-col justify-between rounded-3xl hover:shadow-xl transition duration-200 shadow-input dark:shadow-none dark:bg-neutral-800 bg-neutral-50 hover:-translate-y-2 overflow-hidden relative",
         className
       )}
     >
@@ -59,7 +59,7 @@ export const WorksGridItem = ({
         />
       </motion.div>
       {/* 作品情報 */}
-      <div className="group-hover/grids:translate-x-2 transition duration-200 flex flex-col gap-2 h-1/3">
+      <div className="group-hover/grids:translate-x-2 transition flex flex-col gap-2 h-1/3">
         <motion.div
           variants={itemVariants}
           initial="hidden"
@@ -67,7 +67,7 @@ export const WorksGridItem = ({
           custom={index}
           className="font-sans text-xs text-foreground/60"
         >
-          {work.year}　|　{work.type}
+          {work.year}　|　{work.type}　|　{work.category}
         </motion.div>
         <motion.div
           variants={itemVariants}

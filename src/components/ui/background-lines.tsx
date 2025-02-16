@@ -8,19 +8,14 @@ export const BackgroundLines = ({
   className,
   svgOptions,
 }: {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
   svgOptions?: {
     duration?: number;
   };
 }) => {
   return (
-    <div
-      className={cn(
-        "h-[20rem] md:h-screen w-full bg-white dark:bg-black",
-        className
-      )}
-    >
+    <div className={cn("h-[20rem] md:h-screen w-full", className)}>
       <SVG svgOptions={svgOptions} />
       {children}
     </div>
