@@ -74,7 +74,7 @@
   }, {
     "id": 10,
     "title": "ファイティン！",
-    "image": "/images/works/fighters.png",
+    "image": "/images/works/fighters.jpg",
     "year": 2023,
     "type": "illustration",
     "category": "顧客依頼",
@@ -83,8 +83,8 @@
   }, {
     "id": 11,
     "title": "櫛稲の群像",
-    "image": "/images/works/kushunada.png",
-    "year": 2024,
+    "image": "/images/works/kushunada.svg",
+    "year": 2022,
     "type": "illustration",
     "category": "顧客依頼",
     "client": "株式会社櫛稲",
@@ -118,33 +118,34 @@
     "description": "日本語学校イストウェストのスピーチコンテストポスターデザイン"
   }, {
     "id": 15,
-    "title": "作品15",
-    "image": "/images/works/work15.jpg",
-    "year": 2024,
-    "type": "web",
+    "title": "ボクサーたち",
+    "image": "/images/works/podcast.jpg",
+    "year": 2022,
+    "type": "illustration",
     "category": "顧客依頼",
-    "description": "企業の公式サイトデザイン"
+    "client": "拳擊交流同好会",
+    "description": "ボクシングポッドキャストのプロフィールイラスト"
   }, {
     "id": 16,
     "title": "ヨガ動物",
-    "image": "/images/works/futurecity.png",
-    "year": 2024,
-    "type": "illustration",
-    "category": "オリジナル",
-    "description": "未来都市のコンセプトアート"
-  }, {
-    "id": 17,
-    "title": "作品17",
-    "image": "/images/works/work17.jpg",
-    "year": 2023,
+    "image": "/images/works/yoga_animals.svg",
+    "year": 2021,
     "type": "graphic",
     "category": "オリジナル",
-    "description": "カフェのブランドロゴ"
+    "description": "ヨガ動物のイラスト"
+  }, {
+    "id": 17,
+    "title": "タイソン",
+    "image": "/images/works/tyson.svg",
+    "year": 2021,
+    "type": "graphic",
+    "category": "オリジナル",
+    "description": "ボクシングチャンピオンタイソンの紹介"
   }, {
     "id": 18,
     "title": "シェアリングエコノミー新時代",
     "image": "/images/works/yahoo_news.svg",
-    "year": 2023,
+    "year": 2019,
     "type": "graphic",
     "category": "顧客依頼",
     "client": "Yahoo!TW",
@@ -154,7 +155,7 @@
     "id": 19,
     "title": "台湾百岳図鑑",
     "image": "/images/works/mountain_100.svg",
-    "year": 2020,
+    "year": 2019,
     "type": "web",
     "category": "オリジナル",
     "description": "台湾の最も高い100座の山を図解"
@@ -162,10 +163,10 @@
     "id": 20,
     "title": "スポーツ図鑑",
     "image": "/images/works/sports_thumb.svg",
-    "year": 2020,
+    "year": 2019,
     "type": "graphic",
     "category": "オリジナル",
-    "description": "スポーツの図鑑"
+    "description": "東京オリンピック向け、いろいろなスポーツのポスター"
   }, {
     "id": 21,
     "title": "町の人々",
@@ -268,13 +269,13 @@
     "description": "2015年NBAファイナル両チーム戦力の図解"
   }, {
     "id": 33,
-    "title": "新しい台北",
-    "image": "/images/works/tpe_2015.svg",
+    "title": "交通安全",
+    "image": "/images/works/traffic_safety.svg",
     "year": 2015,
     "type": "graphic",
     "category": "顧客依頼",
     "client": "台北市政府",
-    "description": "台北の福祉政策SNS広告デザイン"
+    "description": "台北の交通安全政策SNS広告"
   }, {
     "id": 34,
     "title": "Ford New Focus",
@@ -286,12 +287,13 @@
     "description": "フォード・ニュー・フォーカスのイラスト"
   }, {
     "id": 35,
-    "title": "艾雷島",
-    "image": "/images/works/isle_of_skye_thumb.svg",
+    "title": "アイラ島のウイスキーの威士忌",
+    "image": "/images/works/whisky.svg",
     "year": 2015,
-    "type": "infographic",
+    "type": "graphic",
     "category": "顧客依頼",
-    "description": "世界神話の死神図鑑"
+    "client": "非公開",
+    "description": "アイラ島のウイスキーのSNS広告"
   }, {
     "id": 36,
     "title": "台湾の炭素排出",
@@ -320,12 +322,12 @@
   }, {
     "id": 39,
     "title": "EATME",
-    "image": "/images/works/work29.jpg",
+    "image": "/images/works/eatme.svg",
     "year": 2024,
-    "type": "illustration",
+    "type": "graphic",
     "category": "顧客依頼",
     "client": "EATME Inc.",
-    "description": "動物イラスト"
+    "description": "EATMEのパンフレットデザイン"
   }, {
     "id": 40,
     "title": "スコヴィルスケール",
