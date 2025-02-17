@@ -4,6 +4,7 @@ import { BackgroundLines } from "@/components/ui/background-lines";
 import SlideUpLetters from "@/components/SlideUpLetters";
 import ScrollDown from "@/components/ScrollDown";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function IntroHeader() {
   return (
@@ -18,16 +19,45 @@ export default function IntroHeader() {
           text="LIUCHIAWEI"
           className="text-7xl md:text-9xl font-black"
         />
-
+        {/* 画像 */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.2 }}
-          className="text-xl md:text-3xl font-medium text-foreground/80"
+          initial={{ opacity: 0, y: -100, scale: 0.9 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{
+            type: "spring",
+            bounce: 0.6,
+            delay: 0.4,
+            duration: 1,
+            custom: 0,
+          }}
+          className="absolute bottom-0 left-0 w-full h-full flex justify-center items-center z-10"
         >
-          <span className="block">Graphic Designer</span>
-          <span className="block">Frontend Engineer</span>
-          <span className="block">Illustrator</span>
+          <Image
+            src="/images/liuchiawei.svg"
+            alt="liuchiawei"
+            width={100}
+            height={1200}
+          />
+        </motion.div>
+        {/* 背景 */}
+        <motion.div
+          initial={{ opacity: 0, y: 200, scale: 0.8 }}
+          whileInView={{ opacity: 1, y: 108, scale: 1 }}
+          custom={2}
+          transition={{
+            type: "spring",
+            bounce: 0.6,
+            duration: 0.6,
+            delay: 0.5,
+          }}
+          className="absolute bottom-0 left-0 right-0 flex justify-center items-center z-0"
+        >
+          <Image
+            src="/images/liuchiawei-base.svg"
+            alt="liuchiawei"
+            width={200}
+            height={600}
+          />
         </motion.div>
       </div>
 

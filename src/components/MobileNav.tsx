@@ -34,7 +34,7 @@ export default function MobileNav({
         className="w-full md:w-[360px] absolute top-0 right-0 bottom-0 bg-accent/60 backdrop-blur-sm"
       />
       {/* モバイルナビゲーションのコンテンツ */}
-      <Navigation isOpen={isOpen} navItems={navItems} />
+      <Navigation isOpen={isOpen} navItems={navItems} setIsOpen={setIsOpen} />
       {/* ビゲーションのボタン */}
       <MenuToggle toggle={() => setIsOpen(!isOpen)} />
     </motion.nav>
@@ -53,9 +53,11 @@ const navVariants: Variants = {
 const Navigation = ({
   isOpen,
   navItems,
+  setIsOpen,
 }: {
   isOpen: boolean;
   navItems: NavItemProps[];
+  setIsOpen: (isOpen: boolean) => void;
 }) => (
   <motion.ul
     variants={navVariants}
@@ -64,7 +66,7 @@ const Navigation = ({
     }`}
   >
     {navItems.map((item, index) => (
-      <MenuItem key={index} item={item} />
+      <MenuItem key={index} item={item} setIsOpen={setIsOpen} />
     ))}
   </motion.ul>
 );
@@ -86,7 +88,7 @@ const itemVariants: Variants = {
   },
 };
 
-const MenuItem = ({ item }: { item: NavItemProps }) => {
+const MenuItem = ({ item, setIsOpen }: { item: NavItemProps, setIsOpen: (isOpen: boolean) => void }) => {
   return (
     <motion.li
       className="cursor-pointer"
@@ -97,6 +99,7 @@ const MenuItem = ({ item }: { item: NavItemProps }) => {
       <Link
         href={item.href}
         className="flex items-center justify-center gap-4 text-white text-4xl"
+        onClick={() => setIsOpen(false)}
       >
         {item.icon}
         <div className="w-36 font-bold">{item.labelEN}</div>
