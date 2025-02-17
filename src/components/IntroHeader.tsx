@@ -5,10 +5,12 @@ import SlideUpLetters from "@/components/SlideUpLetters";
 import ScrollDown from "@/components/ScrollDown";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useIsMobile } from "@/hooks/useMobile";
 
 export default function IntroHeader() {
+  const isMobile = useIsMobile();
   return (
-    <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <section className="relative h-screen w-full flex items-center justify-center">
       <BackgroundLines
         className="absolute inset-0 z-0"
         svgOptions={{ duration: 15 }}
@@ -42,7 +44,7 @@ export default function IntroHeader() {
         {/* 背景 */}
         <motion.div
           initial={{ opacity: 0, y: 200, scale: 0.8 }}
-          whileInView={{ opacity: 1, y: 108, scale: 1 }}
+          whileInView={isMobile ? { opacity: 1, y: 135, scale: 1 } : { opacity: 1, y: 110, scale: 1 }}
           custom={2}
           transition={{
             type: "spring",

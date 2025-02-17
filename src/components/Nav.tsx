@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { NavItemProps } from "@/lib/props";
 import { House, UserRound, BookImage, Mail } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
-import { useIsMobile } from "@/hooks/use-mobile";
+import { useIsMobile } from "@/hooks/useMobile";
 import MobileNav from "./MobileNav";
 import ThemeToggle from "./ThemeToggle";
 import { Button } from "@/components/ui/button";

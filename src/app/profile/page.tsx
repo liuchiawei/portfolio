@@ -3,7 +3,7 @@ import { TimelineEntry } from "@/lib/props";
 import NameCard from "@/components/NameCard";
 export default function About() {
   return (
-    <div>
+    <div className="w-full max-w-4xl mx-auto p-6">
       <NameCard />
       <Timeline data={data} />
     </div>
