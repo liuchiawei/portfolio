@@ -47,7 +47,7 @@ export const WorksGridItem = ({
         initial="hidden"
         animate="visible"
         custom={index}
-        className="flex justify-center items-center w-full h-full min-h-48 rounded-2xl border-2 border-foreground relative overflow-hidden"
+        className="flex justify-center items-center w-full h-full min-h-50 rounded-2xl border-2 border-foreground relative overflow-hidden"
       >
         <Image
           src={work.image}

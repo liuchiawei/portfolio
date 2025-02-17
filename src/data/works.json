@@ -1,28 +1,33 @@
 [{
     "id": 1,
     "title": "Ninetendo Timeline",
-    "image": "/images/works/nintendo.png",
+    "image": "/images/works/nintendo-timeline.jpg",
     "year": 2024,
     "type": "web",
     "category": "オリジナル",
     "description": "任天堂ゲーム機の歴史サイト",
-    "link": "https://nintendo-timeline.vercel.app/"
+    "link": "https://nintendo-timeline.vercel.app/",
+    "tools": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion"]
   }, {
     "id": 2,
     "title": "世界を変える企業",
-    "image": "/images/works/work2.jpg",
+    "image": "/images/works/spinearth.jpg",
     "year": 2024,
     "type": "web",
     "category": "オリジナル",
-    "description": "作品2の説明"
+    "description": "世界を変える企業のサイト",
+    "link": "https://spinning-earth-opal.vercel.app/",
+    "tools": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion", "Three.js"]
   }, {
     "id": 3,
     "title": "Deep Shinjuku",
-    "image": "/images/works/archilab.png",
+    "image": "/images/works/deepshinjuku.jpg",
     "year": 2024,
     "type": "web",
     "category": "オリジナル",
-    "description": "新宿の怪談サイト"
+    "description": "新宿の怪談を集めたサイト",
+    "link": "https://deepshinjuku.com/urbanmyth/",
+    "tools": ["PHP", "JavaScript", "CSS"]
   }, {
     "id": 4,
     "title": "MBTIテスト",
@@ -30,7 +35,8 @@
     "year": 2024,
     "type": "web",
     "category": "オリジナル",
-    "description": "MBTIテストサイト"
+    "description": "MBTIテストサイト",
+    "tools": ["JavaScript", "CSS"]
   }, {
     "id": 5,
     "title": "俺との相性テスト",
@@ -38,7 +44,9 @@
     "year": 2024,
     "type": "web",
     "category": "オリジナル",
-    "description": "リュウチャーウェイとの相性テストサイト"
+    "description": "リュウチャーウェイとの相性テストサイト",
+    "link": "https://www.ryu-chawai.com/compatibility/",
+    "tools": ["JavaScript", "jQuery", "CSS"]
   }, {
     "id": 6,
     "title": "サムライソウル",
@@ -46,7 +54,8 @@
     "year": 2024,
     "type": "illustration",
     "category": "オリジナル",
-    "description": "サムライソウルのアルバムイラスト"
+    "description": "サムライソウルのアルバムイラスト",
+    "tools": ["Adobe Photoshop", "Procreate"]
   }, {
     "id": 7,
     "title": "インターネットの歴史",
@@ -54,7 +63,8 @@
     "year": 2024,
     "type": "infographic",
     "category": "オリジナル",
-    "description": "インターネットの歴史"
+    "description": "インターネットの歴史",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 8,
     "title": "データベースとは？",
@@ -62,7 +72,8 @@
     "year": 2024,
     "type": "infographic",
     "category": "オリジナル",
-    "description": "データベースの基礎概念を解説するインフォグラフィック"
+    "description": "データベースの基礎概念を解説するインフォグラフィック",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 9,
     "title": "犬ボクサー",
@@ -71,7 +82,8 @@
     "type": "illustration",
     "category": "顧客依頼",
     "client": "非公開",
-    "description": "ボクサーのプロフィールイラスト"
+    "description": "ボクサーのプロフィールイラスト",
+    "tools": ["Adobe Photoshop", "Procreate"]
   }, {
     "id": 10,
     "title": "ファイティン！",
@@ -80,7 +92,8 @@
     "type": "illustration",
     "category": "顧客依頼",
     "client": "拳擊交流同好會",
-    "description": "スポーツ選手向け応援イラスト"
+    "description": "スポーツ選手向け応援イラスト",
+    "tools": ["Adobe Photoshop", "Procreate"]
   }, {
     "id": 11,
     "title": "櫛稲の群像",
@@ -89,7 +102,8 @@
     "type": "illustration",
     "category": "顧客依頼",
     "client": "株式会社櫛稲",
-    "description": "株式会社櫛稲公式サイトのイラスト"
+    "description": "株式会社櫛稲公式サイトのイラスト",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 12,
     "title": "ボクサー忍者",
@@ -98,7 +112,8 @@
     "type": "logo",
     "category": "顧客依頼",
     "client": "非公開",
-    "description": "ボクサーのロゴデザイン"
+    "description": "ボクサーのロゴデザイン",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 13,
     "title": "ムエタイ狼牙",
@@ -107,7 +122,8 @@
     "type": "logo",
     "category": "顧客依頼",
     "client": "非公開",
-    "description": "格闘技選手のロゴデザイン"
+    "description": "格闘技選手のロゴデザイン",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 14,
     "title": "夢を語る",
@@ -116,7 +132,8 @@
     "type": "illustration",
     "category": "顧客依頼",
     "client": "日本語学校イストウェスト",
-    "description": "日本語学校イストウェストのスピーチコンテストポスターデザイン"
+    "description": "日本語学校イストウェストのスピーチコンテストポスターデザイン",
+    "tools": ["Adobe Illustrator", "Procreate"]
   }, {
     "id": 15,
     "title": "ボクサーたち",
@@ -125,7 +142,8 @@
     "type": "illustration",
     "category": "顧客依頼",
     "client": "拳擊交流同好会",
-    "description": "ボクシングポッドキャストのプロフィールイラスト"
+    "description": "ボクシングポッドキャストのプロフィールイラスト",
+    "tools": ["Adobe Photoshop", "Procreate"]
   }, {
     "id": 16,
     "title": "ヨガ動物",
@@ -133,7 +151,8 @@
     "year": 2021,
     "type": "graphic",
     "category": "オリジナル",
-    "description": "ヨガ動物のイラスト"
+    "description": "ヨガ動物のイラスト",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 17,
     "title": "タイソン",
@@ -141,7 +160,8 @@
     "year": 2021,
     "type": "graphic",
     "category": "オリジナル",
-    "description": "ボクシングチャンピオンタイソンの紹介"
+    "description": "ボクシングチャンピオンタイソンの紹介",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 18,
     "title": "シェアリングエコノミー新時代",
@@ -150,7 +170,8 @@
     "type": "graphic",
     "category": "顧客依頼",
     "client": "Yahoo!TW",
-    "description": "Yahoo!TVのSNS広告イラスト"
+    "description": "Yahoo!TVのSNS広告イラスト",
+    "tools": ["Adobe Illustrator"]
   },
   {
     "id": 19,
@@ -159,7 +180,8 @@
     "year": 2019,
     "type": "web",
     "category": "オリジナル",
-    "description": "台湾の最も高い100座の山を図解"
+    "description": "台湾の最も高い100座の山を図解",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 20,
     "title": "スポーツ図鑑",
@@ -167,7 +189,8 @@
     "year": 2019,
     "type": "graphic",
     "category": "オリジナル",
-    "description": "東京オリンピック向け、いろいろなスポーツのポスター"
+    "description": "東京オリンピック向けのスポーツポスター",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 21,
     "title": "町の人々",
@@ -175,7 +198,8 @@
     "year": 2018,
     "type": "graphic",
     "category": "オリジナル",
-    "description": "都市に住んでいる人々のイラスト"
+    "description": "都市に住んでいる人々のイラスト",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 22,
     "title": "感染症ポストカード",
@@ -184,7 +208,8 @@
     "type": "web",
     "category": "顧客依頼",
     "client": "Info2Act",
-    "description": "世界の観光地における感染症ガイドライン"
+    "description": "世界の観光地における感染症ガイドライン",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 23,
     "title": "中秋三大恐怖奇談",
@@ -193,7 +218,8 @@
     "type": "graphic",
     "category": "顧客依頼",
     "client": "Info2Act",
-    "description": "データ可視化デザイン"
+    "description": "データ可視化デザイン",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 24,
     "title": "台北のスカイライン",
@@ -201,7 +227,8 @@
     "year": 2018,
     "type": "graphic",
     "category": "オリジナル",
-    "description": "台北のスカイラインイラスト"
+    "description": "台北のスカイラインイラスト",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 25,
     "title": "図解台北古城門",
@@ -209,7 +236,8 @@
     "year": 2017,
     "type": "graphic",
     "category": "オリジナル",
-    "description": "台北古城門のビジュアルガイド"
+    "description": "台北古城門のビジュアルガイド",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 26,
     "title": "雷神図鑑",
@@ -217,7 +245,8 @@
     "year": 2016,
     "type": "infographic",
     "category": "オリジナル",
-    "description": "世界神話の雷神図鑑"
+    "description": "世界神話の雷神図鑑",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 27,
     "title": "死神図鑑",
@@ -225,7 +254,8 @@
     "year": 2016,
     "type": "infographic",
     "category": "オリジナル",
-    "description": "世界神話の死神図鑑"
+    "description": "世界神話の死神図鑑",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 28,
     "title": "人間のあるある",
@@ -234,7 +264,8 @@
     "type": "graphic",
     "category": "顧客依頼",
     "client": "非公開",
-    "description": "人間のイラスト"
+    "description": "人間のイラスト",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 29,
     "title": "台湾もののけ図鑑",
@@ -242,7 +273,8 @@
     "year": 2016,
     "type": "infographic",
     "category": "オリジナル",
-    "description": "図解台湾のもののけ、魔神仔"
+    "description": "図解台湾のもののけ、魔神仔",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 30,
     "title": "職場にいるいるあいつ達",
@@ -250,7 +282,8 @@
     "year": 2016,
     "type": "infographic",
     "category": "オリジナル",
-    "description": "職場によくいる人を集めたイラスト"
+    "description": "職場によくいる人を集めたイラスト",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 31,
     "title": "Nike Airmax95 誕生の裏側",
@@ -259,7 +292,8 @@
     "type": "graphic",
     "category": "顧客依頼",
     "client": "Nike",
-    "description": "Nike Airmax95 20周年記念キャンペーンのSNS広告デザイン"
+    "description": "Nike Airmax95 20周年記念キャンペーンのSNS広告デザイン",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 32,
     "title": "NBAファイナル戦力図鑑",
@@ -267,7 +301,8 @@
     "year": 2015,
     "type": "infographic",
     "category": "オリジナル",
-    "description": "2015年NBAファイナル両チーム戦力の図解"
+    "description": "2015年NBAファイナル両チーム戦力の図解",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 33,
     "title": "交通安全",
@@ -276,7 +311,8 @@
     "type": "graphic",
     "category": "顧客依頼",
     "client": "台北市政府",
-    "description": "台北の交通安全政策SNS広告"
+    "description": "台北の交通安全政策SNS広告",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 34,
     "title": "Ford New Focus",
@@ -285,7 +321,8 @@
     "type": "graphic",
     "category": "顧客依頼",
     "client": "Ford",
-    "description": "フォード・ニュー・フォーカスのイラスト"
+    "description": "フォード・ニュー・フォーカスのイラスト",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 35,
     "title": "アイラ島のウイスキーの威士忌",
@@ -294,7 +331,8 @@
     "type": "graphic",
     "category": "顧客依頼",
     "client": "非公開",
-    "description": "アイラ島のウイスキーのSNS広告"
+    "description": "アイラ島のウイスキーのSNS広告",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 36,
     "title": "台湾の炭素排出",
@@ -303,7 +341,8 @@
     "type": "infographic",
     "category": "顧客依頼",
     "client": "台湾環境保護署",
-    "description": "台湾の炭素排出量の統計調査報告デザイン"
+    "description": "台湾の炭素排出量の統計調査報告デザイン",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 37,
     "title": "台湾のがん",
@@ -311,7 +350,8 @@
     "year": 2013,
     "type": "infographic",  
     "category": "オリジナル",
-    "description": "台湾がん統計調査報告デザイン"
+    "description": "台湾がん統計調査報告デザイン",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 38,
     "title": "台湾憲兵",
@@ -319,7 +359,8 @@
     "year": 2013,
     "type": "infographic",
     "category": "オリジナル",
-    "description": "台湾憲兵の紹介イラスト"
+    "description": "台湾憲兵の紹介イラスト",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 39,
     "title": "EATME",
@@ -328,7 +369,8 @@
     "type": "graphic",
     "category": "顧客依頼",
     "client": "EATME Inc.",
-    "description": "EATMEのパンフレットデザイン"
+    "description": "EATMEのパンフレットデザイン",
+    "tools": ["Adobe Illustrator"]
   }, {
     "id": 40,
     "title": "スコヴィルスケール",
@@ -336,6 +378,7 @@
     "year": 2012,
     "type": "infographic",
     "category": "オリジナル",
-    "description": "スコヴィル値のインフォグラフィックデザイン"
+    "description": "スコヴィル値のインフォグラフィックデザイン",
+    "tools": ["Adobe Illustrator"]
   }
 ]

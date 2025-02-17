@@ -15,7 +15,7 @@ export default function IntroHeader() {
 
       <div className="relative z-10 text-center space-y-8">
         <SlideUpLetters
-          text="DOUBLECHEAP"
+          text="LIUCHIAWEI"
           className="text-7xl md:text-9xl font-black"
         />
 

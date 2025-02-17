@@ -10,7 +10,7 @@ export default function BackToTop() {
   useEffect(() => {
     const handleScroll = () => {
       // height of the Button to show: 720px
-      if (window.scrollY > 720) {
+      if (window.scrollY > 120) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -33,8 +33,8 @@ export default function BackToTop() {
 
   return (
     <div
-      className={`flex items-center justify-center gap-2 fixed bottom-8 right-8 transition-opacity duration-300 *:cursor-pointer ${
-        isVisible ? "opacity-100" : "opacity-0"
+      className={`flex items-center justify-center gap-2 fixed bottom-8 right-8 transition-all *:cursor-pointer ${
+        isVisible ? "translate-y-0" : "translate-y-50"
       }`}
     >
       <Button onClick={scrollToTop}>

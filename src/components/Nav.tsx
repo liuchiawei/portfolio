@@ -49,7 +49,7 @@ export default function Nav() {
   return (
     <div className="sticky p-6 top-0 z-20 bg-background/40 backdrop-blur-sm border-b-1 border-foreground flex justify-center md:justify-between items-end">
       <Link href="/">
-        <SlideUpLetters text="DOUBLECHEAP" className="text-4xl font-black text-center" />
+        <SlideUpLetters text="LIUCHIAWEI" className="text-4xl font-black text-center" />
       </Link>
       <NavigationMenu>
           <NavigationMenuList>

@@ -22,4 +22,5 @@ export interface WorksProps {
   client?: string;
   description: string;
   link?: string;
+  tools: string[];
 }
