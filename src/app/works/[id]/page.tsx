@@ -22,8 +22,13 @@ export function generateStaticParams() {
   }));
 }
 
-export default async function WorkPage({ params }: { params: { id: string } }) {
-  const work = works.find((item) => item.id === Number(params.id));
+export default async function WorkPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  const work = works.find((item) => item.id === Number(id));
   // 404 頁面
   if (!work) return notFound();
 
