@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { Roboto, Roboto_Mono, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
-
+import { ThemeProvider } from "@/components/ThemeProvider";
+import { Analytics } from "@vercel/analytics/react";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["400", "500", "700", "900"],
 });
 
 const robotoMono = Roboto_Mono({
@@ -31,11 +35,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
+    <html lang="ja" suppressHydrationWarning>
       <body
-        className={`${roboto.variable} ${robotoMono.variable} ${notoSansJP.variable} antialiased`}
+        className={`${roboto.variable} ${robotoMono.variable} ${notoSansJP.variable} bg-dot-28-s-2-foreground/30 antialiased`}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {/* TODO: isHome (intro animation) */}
+          <Nav />
+          {children}
+          <Footer name="Liu Chiawei" />
+          <BackToTop />
+        </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );

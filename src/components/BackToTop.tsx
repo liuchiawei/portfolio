@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function BackToTop() {
@@ -9,8 +9,8 @@ export default function BackToTop() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // height of the Button to show: 852px( iPhone 14 Pro )
-      if (window.scrollY > 852) {
+      // height of the Button to show: 720px
+      if (window.scrollY > 120) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -23,18 +23,26 @@ export default function BackToTop() {
     };
   }, []);
 
-  const handleClick = () => {
+  const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const scrollToBottom = () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+  };
+
   return (
-    <Button
-      className={`${
-        isVisible ? "opacity-100" : "opacity-0"
-      } fixed bottom-8 right-8 cursor-pointer transition-opacity duration-300`}
-      onClick={handleClick}
+    <div
+      className={`flex items-center justify-center gap-2 fixed bottom-8 right-8 transition-all *:cursor-pointer ${
+        isVisible ? "translate-y-0" : "translate-y-50"
+      }`}
     >
-      <ArrowUp className="w-4 h-4" />
-    </Button>
+      <Button onClick={scrollToTop}>
+        <ArrowUp className="w-4 h-4" />
+      </Button>
+      <Button onClick={scrollToBottom}>
+        <ArrowDown className="w-4 h-4" />
+      </Button>
+    </div>
   );
 }
