@@ -13,12 +13,6 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-type WorkPageProps = {
-  params: {
-    id: string;
-  };
-};
-
 // ISR
 export const revalidate = 60;
 export const dynamicParams = true;
@@ -28,7 +22,7 @@ export function generateStaticParams() {
   }));
 }
 
-export default function WorkPage({ params }: WorkPageProps) {
+export default async function WorkPage({ params }: { params: { id: string } }) {
   const work = works.find((item) => item.id === Number(params.id));
   // 404 頁面
   if (!work) return notFound();
@@ -86,11 +80,7 @@ const WorkInfo = ({ work }: { work: WorksProps }) => {
       </div>
       {work.link && (
         <Button variant="default" asChild className="self-center rounded-full">
-          <a
-            href={work.link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={work.link} target="_blank" rel="noopener noreferrer">
             作品を見る
           </a>
         </Button>
