@@ -31,21 +31,22 @@
   }, {
     "id": 4,
     "title": "MBTIテスト",
-    "image": "/images/works/work4.jpg",
+    "image": "/images/works/mbti.jpg",
     "year": 2024,
     "type": "web",
     "category": "オリジナル",
     "description": "MBTIテストサイト",
+    "link": "https://deepshinjuku.com/mbti/",
     "tools": ["JavaScript", "CSS"]
   }, {
     "id": 5,
     "title": "俺との相性テスト",
-    "image": "/images/works/work5.jpg",
+    "image": "/images/works/mytest.jpg",
     "year": 2024,
     "type": "web",
     "category": "オリジナル",
     "description": "リュウチャーウェイとの相性テストサイト",
-    "link": "https://www.ryu-chawai.com/compatibility/",
+    "link": "https://deepshinjuku.com/test/",
     "tools": ["JavaScript", "jQuery", "CSS"]
   }, {
     "id": 6,
