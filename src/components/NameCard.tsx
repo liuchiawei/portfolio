@@ -4,9 +4,11 @@ import Image from "next/image";
 import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card";
 import ReactCardFlip from "react-card-flip";
 import { useState } from "react";
+import { useIsMobile } from "@/hooks/useMobile";
 import * as motion from "motion/react-client";
 import type { Variants } from "motion/react";
 import { Send } from "lucide-react";
+import RadarChart from "@/components/RadarChart";
 import {
   Tooltip,
   TooltipContent,
@@ -15,6 +17,7 @@ import {
 } from "@/components/ui/tooltip";
 
 export default function NameCard() {
+  const isMobile = useIsMobile();
   const [isFlipped, setIsFlipped] = useState(false);
   /** 
     @function handleFlip
@@ -139,24 +142,27 @@ export default function NameCard() {
         }`}
         className="w-full h-full"
       >
-        <CardBody className="bg-stone-200 w-full h-full rounded-3xl shadow-xl">
+        <CardBody className="bg-stone-300 w-full h-full rounded-3xl shadow-xl">
           <div
-            className="grid grid-cols-1 md:grid-cols-2 gap-1 items-center cursor-pointer px-8 py-4 w-full h-full **:data-primary-text:text-stone-950 **:data-secondary-text:text-stone-400 *:text-center *:md:text-left *:w-full hover:**:data-image:drop-shadow-xl"
+            className="grid grid-cols-1 md:grid-cols-2 gap-1 items-center cursor-pointer p-8 w-full h-full *:text-center *:md:text-left *:w-full hover:**:data-image:drop-shadow-xl"
             onClick={handleFlip}
           >
-            <CardItem
-              translateZ={70}
-              className="w-full *:text-center *:md:text-left *:data-subtitle:text-xl *:data-title:text-4xl *:data-title:font-black"
-            >
-              <h3 data-primary-text>リュウ チャーウェイ</h3>
-              <h1 data-primary-text>Liu Chiawei</h1>
+            {!isMobile && (
+              <CardItem translateZ={20} className="h-full w-full row-span-2">
+                <RadarChart />
+              </CardItem>
+            )}
+            <CardItem translateZ={50} className="p-4">
+              <h2 className="text-md md:text-sm mb-4 text-stone-600">
+                About Me
+              </h2>
+              <h1 className="text-5xl md:text-4xl font-black text-stone-950">
+                私について
+              </h1>
             </CardItem>
-            <CardItem translateZ={70} className="row-span-3">
-              <p
-                data-primary-text
-                className="text-sm md:text-md leading-6 md:leading-8 text-justify"
-              >
-                クリエイターをマネジメントする事務所やWEB制作会社などを経て、2015年にイラストレーターとして独立。シンプルな線と目を引く色づかいを特徴として、広告キャンペーン、書籍の表紙、商品パッケージなどの「デザインにフィットする」イラストを描く。
+            <CardItem translateZ={80} className="h-full p-2">
+              <p className="text-sm md:text-md leading-6 text-justify text-stone-600">
+                2011年にインフォグラフィックを中心としたデザイン事務所を設立し、2018年からフリーランスのイラストレーターおよびグラフィックデザイナーとして独立しました。創作スタイルはシンプルな線と鮮やかな色を特徴としています。プライベートではプロボクサーとして活動しています。
               </p>
             </CardItem>
           </div>
