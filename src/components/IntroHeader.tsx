@@ -16,10 +16,10 @@ export default function IntroHeader() {
         svgOptions={{ duration: 15 }}
       />
 
-      <div className="relative z-10 text-center space-y-8">
+      <div className="relative z-10 text-center space-y-8 px-4 md:px-0">
         <SlideUpLetters
           text="LIUCHIAWEI"
-          className="text-7xl md:text-9xl font-black"
+          className="text-6xl md:text-9xl font-black"
         />
         {/* 画像 */}
         <motion.div

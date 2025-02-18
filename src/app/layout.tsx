@@ -19,7 +19,7 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "DOUBLECHEAP | ポートフォリオサイト",
+  title: "LIUCHIAWEI | ポートフォリオサイト",
   description: "イラストレーター Liu Chaiweiのポートフォリオサイト",
 };
 

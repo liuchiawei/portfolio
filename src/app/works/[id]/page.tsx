@@ -101,11 +101,12 @@ const BackButton = () => {
         <TooltipTrigger asChild>
           <Button
             variant="default"
-            className="rounded-full w-fit col-span-2"
+            className="rounded-full w-fit mx-auto"
             asChild
           >
-            <Link href="/works" className="mx-auto px-12 py-2">
+            <Link href="/works" className="flex items-center gap-2">
               <ArrowLeft />
+              作品一覧
             </Link>
           </Button>
         </TooltipTrigger>
