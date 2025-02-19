@@ -1,14 +1,20 @@
 import { Timeline } from "@/components/ui/timeline";
-import { TimelineEntry } from "@/lib/props";
+import { TimelineEntry, TimelineHeader } from "@/lib/props";
 import NameCard from "@/components/NameCard";
 export default function About() {
   return (
-    <div className="w-full max-w-6xl mx-auto p-6">
+    <div className="w-full max-w-6xl mx-auto">
       <NameCard />
-      <Timeline data={data} />
+      <Timeline data={data} header={header} />
     </div>
   );
 }
+
+const header: TimelineHeader= {
+  title: " キャリアの歩み",
+  content:
+    "これまでのキャリアパスを詳しく説明しています。ぜひご覧ください。",
+};
 
 const data: TimelineEntry[] = [
   {

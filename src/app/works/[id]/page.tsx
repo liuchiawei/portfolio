@@ -56,7 +56,7 @@ const WorkInfo = ({ work }: { work: WorksProps }) => {
     <div className="p-6 rounded-2xl border-2 border-foreground bg-background shadow-md flex flex-col gap-6">
       <h1 className="text-3xl font-bold">{work.title}</h1>
       <p className="text-md text-foreground/50">{work.description}</p>
-      <hr />
+      <hr className="border-foreground border-2" />
       <div className="flex flex-col gap-1 text-sm [&_h4]:text-foreground/60 [&_h3]:font-bold *:data-info:flex *:data-info:justify-between">
         <div data-info>
           <h3>Year</h3> <h4>{work.year}</h4>

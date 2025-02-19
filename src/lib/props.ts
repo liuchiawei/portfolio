@@ -5,6 +5,11 @@ export interface NavItemProps {
   icon: React.ReactNode;
 }
 
+export interface TimelineHeader {
+  title: string;
+  content: string;
+}
+
 export interface TimelineEntry {
   year: number;
   title: string;

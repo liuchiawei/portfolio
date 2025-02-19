@@ -24,15 +24,15 @@ const chartConfig = {
 
 export default function RadarChartCard({ className }: { className?: string }) {
   const chartData: { name: string; value: number }[] = [
-    { name: "クリエイティブ", value: 92 },
+    { name: "クリエイティブ", value: 90 },
     { name: "デザイン", value: 99 },
-    { name: "インタラクション", value: 84 },
-    { name: "プロジェクト管理", value: 92 },
-    { name: "バックエンド", value: 76 },
-    { name: "フロントエンド", value: 90 },
+    { name: "インタラクション", value: 80 },
+    { name: "プロジェクト管理", value: 85 },
+    { name: "バックエンド", value: 70 },
+    { name: "フロントエンド", value: 85 },
   ];
   return (
-    <Card className={cn("w-full h-full border-2 border-stone-950 bg-stone-50 flex flex-col justify-center items-center", className)}>
+    <Card className={cn("w-full h-full bg-stone-50 flex flex-col justify-center items-center", className)}>
       <CardHeader className="items-center pb-4 text-stone-950">
         <CardTitle className="text-center text-3xl">
           自己分析

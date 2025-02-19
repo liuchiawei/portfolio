@@ -1,10 +1,10 @@
 "use client";
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-import { TimelineEntry } from "@/lib/props";
+import { TimelineEntry, TimelineHeader } from "@/lib/props";
 import ScrollUpItem from "@/components/ScrollUpItem";
 
-export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
+export const Timeline = ({ data, header }: { data: TimelineEntry[], header: TimelineHeader }) => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
@@ -27,12 +27,11 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   return (
     <div className="w-full md:px-10" ref={containerRef}>
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 max-w-4xl">
-          Changelog from my journey
+        <h2 className="text-lg md:text-4xl mb-4 max-w-4xl font-black">
+          {header.title}
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          I&apos;ve been working on Aceternity for the past 2 years. Here&apos;s
-          a timeline of my journey.
+          {header.content}
         </p>
       </div>
 
@@ -54,10 +53,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
             <div className="relative pl-20 pr-4 md:pl-4 w-full">
               {/* Timeline Year (Mobile) */}
-              <h3 className="md:hidden block text-4xl mb-2 text-left font-bold text-neutral-400 dark:text-neutral-600">
+              <h3 className="md:hidden block text-2xl mb-2 text-left text-neutral-400 dark:text-neutral-600">
                 {item.year}
               </h3>
-              <h1 className="text-5xl font-black mb-4">{item.title}</h1>
+              <h1 className="text-4xl md:text-5xl font-black mb-4">{item.title}</h1>
               <p className="text-justify">{item.content}</p>
               <ScrollUpItem emoji={item.emoji} />
             </div>

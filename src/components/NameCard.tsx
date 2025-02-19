@@ -30,7 +30,7 @@ export default function NameCard() {
     <ReactCardFlip
       isFlipped={isFlipped}
       flipDirection="horizontal"
-      containerClassName="w-full max-w-160 md:max-w-200 h-screen max-h-[780px] md:h-132 mx-auto rounded-none md:rounded-[60px] bg-dot-6-s-2-foreground/40 p-6"
+      containerClassName="w-full md:max-w-200 h-[640px] md:h-132 mx-auto rounded-none md:rounded-[60px] bg-dot-6-s-2-foreground/40 p-6"
     >
       {/* カードの正面 */}
       <CardContainer
@@ -54,11 +54,11 @@ export default function NameCard() {
                 initial="offscreen"
                 whileInView="onscreen"
                 viewport={{ amount: 0.4 }}
-                className="bg-accent-gradient rounded-full size-64 md:size-68 overflow-hidden z-0 flex justify-center items-center"
+                className="bg-accent-gradient rounded-full size-60 md:size-68 overflow-hidden z-0 flex justify-center items-center"
               >
                 <motion.div
                   variants={scrollUpItemVariants}
-                  className="size-78 md:size-82"
+                  className="size-72 md:size-82"
                 >
                   <Image
                     src="/images/profile.svg"
@@ -153,15 +153,15 @@ export default function NameCard() {
               </CardItem>
             )}
             <CardItem translateZ={50} className="p-4">
-              <h2 className="text-md md:text-sm mb-4 text-stone-600">
+              <h2 className="text-md md:text-sm mb-4 text-stone-700">
                 About Me
               </h2>
-              <h1 className="text-5xl md:text-4xl font-black text-stone-950">
+              <h1 className="text-4xl font-black text-stone-50">
                 私について
               </h1>
             </CardItem>
             <CardItem translateZ={80} className="h-full p-2">
-              <p className="text-sm md:text-md leading-6 text-justify text-stone-600">
+              <p className="text-sm md:text-md leading-6 text-justify text-stone-700">
                 2011年にインフォグラフィックを中心としたデザイン事務所を設立し、2018年からフリーランスのイラストレーターおよびグラフィックデザイナーとして独立しました。創作スタイルはシンプルな線と鮮やかな色を特徴としています。プライベートではプロボクサーとして活動しています。
               </p>
             </CardItem>

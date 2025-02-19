@@ -9,13 +9,13 @@ export default function ScrollUpItem({ emoji }: { emoji: string }) {
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ amount: 0.4 }}
-      className="mx-auto mt-8 w-full max-w-xl h-[450px] rounded-3xl bg-accent-gradient flex justify-center items-center relative overflow-hidden"
+      className="mx-auto mt-8 w-full max-w-xl h-[280px] md:h-[450px] rounded-3xl bg-accent-gradient flex justify-center items-center relative overflow-hidden"
     >
       <motion.div
         variants={scrollUpItemVariants}
-        className="size-60 bg-stone-50 rounded-3xl flex justify-center items-center absolute shadow-xl"
+        className="size-40 md:size-60 bg-stone-50 rounded-3xl flex justify-center items-center absolute shadow-xl"
       >
-        <div className="text-[132px] select-none">{emoji}</div>
+        <div className="text-[96px] md:text-[132px] select-none">{emoji}</div>
       </motion.div>
     </motion.div>
   );
