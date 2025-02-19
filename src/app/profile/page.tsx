@@ -10,10 +10,9 @@ export default function About() {
   );
 }
 
-const header: TimelineHeader= {
+const header: TimelineHeader = {
   title: " キャリアの歩み",
-  content:
-    "これまでのキャリアパスを詳しく説明しています。ぜひご覧ください。",
+  content: "これまでのキャリアパスを詳しく説明しています。ぜひご覧ください。",
 };
 
 const data: TimelineEntry[] = [
@@ -41,7 +40,7 @@ const data: TimelineEntry[] = [
   },
   {
     year: 2022,
-    title: "來日",
+    title: "来日",
     content: "2022年、コロナ禍が終わった後、東京に移住。",
     emoji: "🗼",
   },

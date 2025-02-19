@@ -5,6 +5,7 @@ import Link from "next/link";
 import Autoplay from "embla-carousel-autoplay";
 import works from "@/data/works.json";
 import IntroHeader from "@/components/IntroHeader";
+import { Button } from "@/components/ui/button";
 import {
   Carousel,
   CarouselContent,
@@ -24,6 +25,11 @@ export default function Home() {
     <main>
       <IntroHeader />
       <WorksCarousel />
+      <Button className="mx-auto my-8 block rounded-full font-bold text-lg h-full flex justify-center items-center transition-all hover:-translate-y-1">
+        <Link href="/works" className="py-2 px-8 h-full">
+          すべて見る
+        </Link>
+      </Button>
     </main>
   );
 }

@@ -16,7 +16,8 @@ export default function IntroHeader() {
         svgOptions={{ duration: 15 }}
       />
 
-      <div className="relative z-10 text-center space-y-8 px-4 md:px-0">
+      <div className="relative z-10 text-center flex flex-col items-center justify-center px-4 md:px-0">
+        <SlideUpLetters text="リュウチャーウェイ" className="text-2xl md:text-4xl text-foreground/30" />
         <SlideUpLetters
           text="LIUCHIAWEI"
           className="text-6xl md:text-9xl font-black"
@@ -44,7 +45,7 @@ export default function IntroHeader() {
         {/* 背景 */}
         <motion.div
           initial={{ opacity: 0, y: 200, scale: 0.8 }}
-          whileInView={isMobile ? { opacity: 1, y: 135, scale: 1 } : { opacity: 1, y: 110, scale: 1 }}
+          whileInView={isMobile ? { opacity: 1, y: 175, scale: 1 } : { opacity: 1, y: 135, scale: 1 }}
           custom={2}
           transition={{
             type: "spring",
