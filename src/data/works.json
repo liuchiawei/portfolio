@@ -66,7 +66,7 @@
     "category": "オリジナル",
     "description": "インターネットの歴史",
     "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/internet_history_1.svg", "/images/works/internet_history_2.svg", "/images/works/internet_history_3.svg", "/images/works/internet_history_4.svg", "/images/works/internet_history_5.svg"]
+    "detail": ["/images/works/details/internet_history_1.svg", "/images/works/details/internet_history_2.svg", "/images/works/details/internet_history_3.svg", "/images/works/details/internet_history_4.svg", "/images/works/details/internet_history_5.svg"]
   }, {
     "id": 8,
     "title": "データベースとは？",
@@ -76,7 +76,7 @@
     "category": "オリジナル",
     "description": "データベースの基礎概念を解説するインフォグラフィック",
     "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/database_1.svg", "/images/works/database_2.svg", "/images/works/database_3.svg", "/images/works/database_4.svg"]
+    "detail": ["/images/works/details/database_1.svg", "/images/works/details/database_2.svg", "/images/works/details/database_3.svg", "/images/works/details/database_4.svg"]
   }, {
     "id": 9,
     "title": "犬ボクサー",
@@ -97,7 +97,7 @@
     "client": "拳擊交流同好會",
     "description": "スポーツ選手向け応援イラスト",
     "tools": ["Adobe Photoshop", "Procreate"],
-    "detail": ["/images/works/KombatRules-01.png", "/images/works/KombatRules-02.png", "/images/works/KombatRules-03.png", "/images/works/KombatRules-04.png"]
+    "detail": ["/images/works/details/KombatRules-01.png", "/images/works/details/KombatRules-02.png", "/images/works/details/KombatRules-03.png", "/images/works/details/KombatRules-04.png"]
   }, {
     "id": 11,
     "title": "櫛稲の群像",
@@ -107,6 +107,7 @@
     "category": "顧客依頼",
     "client": "株式会社櫛稲",
     "description": "株式会社櫛稲公式サイトのイラスト",
+    "link": "https://kushunada.jp/",
     "tools": ["Adobe Illustrator"]
   }, {
     "id": 12,
@@ -307,7 +308,8 @@
     "type": "infographic",
     "category": "オリジナル",
     "description": "2015年NBAファイナル両チーム戦力の図解",
-    "tools": ["Adobe Illustrator"]
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/nba_final_2015_1.svg", "/images/works/details/nba_final_2015_2.svg", "/images/works/details/nba_final_2015_3.svg", "/images/works/details/nba_final_2015_4.svg", "/images/works/details/nba_final_2015_5.svg"]
   }, {
     "id": 33,
     "title": "交通安全",
@@ -327,7 +329,8 @@
     "category": "顧客依頼",
     "client": "Ford",
     "description": "フォード・ニュー・フォーカスのイラスト",
-    "tools": ["Adobe Illustrator"]
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/ford_focus_1.svg", "/images/works/details/ford_focus_2.svg", "/images/works/details/ford_focus_3.svg"]
   }, {
     "id": 35,
     "title": "アイラ島のウイスキーの威士忌",
@@ -337,7 +340,8 @@
     "category": "顧客依頼",
     "client": "非公開",
     "description": "アイラ島のウイスキーのSNS広告",
-    "tools": ["Adobe Illustrator"]
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/whisky_1.svg", "/images/works/details/whisky_2.svg", "/images/works/details/whisky_3.svg", "/images/works/details/whisky_4.svg", "/images/works/details/whisky_5.svg", "/images/works/details/whisky_6.svg"]
   }, {
     "id": 36,
     "title": "台湾の炭素排出",
