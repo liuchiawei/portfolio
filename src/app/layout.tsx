@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     description: "イラストレーター Liu Chiawei のポートフォリオサイト",
     images: [
       {
-        url: "/images/ico.svg",
+        url: "/images/ico.png",
       },
     ],
   },
