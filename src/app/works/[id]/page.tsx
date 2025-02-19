@@ -43,7 +43,7 @@ export default async function WorkPage({
 
   if (work && prevWork && nextWork) {
     return (
-      <div className="w-full max-w-4xl mx-auto py-12 px-4 md:px-0 flex flex-col gap-8">
+      <div className="w-full max-w-4xl mx-auto py-12 px-4 md:px-0 flex flex-col gap-10">
         <div className="flex flex-col md:flex-row gap-4">
           <WorkImage work={work} />
           <WorkInfo work={work} />

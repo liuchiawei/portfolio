@@ -138,7 +138,8 @@
     "category": "顧客依頼",
     "client": "日本語学校イストウェスト",
     "description": "日本語学校イストウェストのスピーチコンテストポスターデザイン",
-    "tools": ["Adobe Illustrator", "Procreate"]
+    "tools": ["Adobe Illustrator", "Procreate"],
+    "detail": ["/images/works/details/poster_eastwest.png"]
   }, {
     "id": 15,
     "title": "ボクサーたち",
@@ -213,9 +214,10 @@
     "year": 2018,
     "type": "web",
     "category": "顧客依頼",
-    "client": "Info2Act",
+    "client": "info2act",
     "description": "世界の観光地における感染症ガイドライン",
-    "tools": ["Adobe Illustrator"]
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/tourguide-01.svg", "/images/works/details/tourguide-02.svg", "/images/works/details/tourguide-03.svg", "/images/works/details/tourguide-04.svg"]
   }, {
     "id": 23,
     "title": "中秋三大恐怖奇談",
@@ -223,9 +225,10 @@
     "year": 2018,
     "type": "graphic",
     "category": "顧客依頼",
-    "client": "Info2Act",
+    "client": "info2act",
     "description": "データ可視化デザイン",
-    "tools": ["Adobe Illustrator"]
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/moon_fest_1.svg", "/images/works/details/moon_fest_2.svg", "/images/works/details/moon_fest_3.svg", "/images/works/details/moon_fest_4.svg"]
   }, {
     "id": 24,
     "title": "台北のスカイライン",
@@ -283,7 +286,8 @@
     "type": "infographic",
     "category": "オリジナル",
     "description": "図解台湾のもののけ、魔神仔",
-    "tools": ["Adobe Illustrator"]
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/mononoke-01.svg", "/images/works/details/mononoke-05.svg", "/images/works/details/mononoke-06.svg", "/images/works/details/mononoke-07.svg", "/images/works/details/mononoke-08.svg", "/images/works/details/mononoke-09.svg"]
   }, {
     "id": 30,
     "title": "職場にいるいるあいつ達",
@@ -292,7 +296,8 @@
     "type": "infographic",
     "category": "オリジナル",
     "description": "職場によくいる人を集めたイラスト",
-    "tools": ["Adobe Illustrator"]
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/mononoke-02.svg"]
   }, {
     "id": 31,
     "title": "Nike Airmax95 誕生の裏側",
@@ -302,7 +307,8 @@
     "category": "顧客依頼",
     "client": "Nike",
     "description": "Nike Airmax95 20周年記念キャンペーンのSNS広告デザイン",
-    "tools": ["Adobe Illustrator"]
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/nike_1.svg"]
   }, {
     "id": 32,
     "title": "NBAファイナル戦力図鑑",
