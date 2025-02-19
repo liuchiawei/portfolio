@@ -33,11 +33,12 @@ export default async function WorkPage({
   if (!work) return notFound();
 
   return (
-    <div className="w-full max-w-4xl mx-auto py-12 px-4 md:px-0 flex flex-col gap-4">
+    <div className="w-full max-w-4xl mx-auto py-12 px-4 md:px-0 flex flex-col gap-8">
       <div className="flex flex-col md:flex-row gap-4">
         <WorkImage work={work} />
         <WorkInfo work={work} />
       </div>
+      {work.detail && <WorkDetail work={work} />}
       <BackButton />
     </div>
   );
@@ -53,7 +54,7 @@ const WorkImage = ({ work }: { work: WorksProps }) => {
 
 const WorkInfo = ({ work }: { work: WorksProps }) => {
   return (
-    <div className="p-6 rounded-2xl border-2 border-foreground bg-background shadow-md flex flex-col gap-6">
+    <div className="w-full md:w-1/3 p-6 rounded-2xl border-2 border-foreground bg-background shadow-md flex flex-col gap-6">
       <h1 className="text-3xl font-bold">{work.title}</h1>
       <p className="text-md text-foreground/50">{work.description}</p>
       <hr className="border-foreground border-2" />
@@ -90,6 +91,27 @@ const WorkInfo = ({ work }: { work: WorksProps }) => {
           </a>
         </Button>
       )}
+    </div>
+  );
+};
+
+const WorkDetail = ({ work }: { work: WorksProps }) => {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+      {work.detail?.map((detail, index) => (
+        <div
+          className="w-full h-full"
+          key={index}
+        >
+          <Image
+            src={detail}
+            alt={work.title}
+            width={640}
+            height={480}
+            className="object-fit object-center object-cover"
+          />
+        </div>
+      ))}
     </div>
   );
 };

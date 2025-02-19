@@ -65,7 +65,8 @@
     "type": "infographic",
     "category": "オリジナル",
     "description": "インターネットの歴史",
-    "tools": ["Adobe Illustrator"]
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/internet_history_1.svg", "/images/works/internet_history_2.svg", "/images/works/internet_history_3.svg", "/images/works/internet_history_4.svg", "/images/works/internet_history_5.svg"]
   }, {
     "id": 8,
     "title": "データベースとは？",
@@ -74,7 +75,8 @@
     "type": "infographic",
     "category": "オリジナル",
     "description": "データベースの基礎概念を解説するインフォグラフィック",
-    "tools": ["Adobe Illustrator"]
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/database_1.svg", "/images/works/database_2.svg", "/images/works/database_3.svg", "/images/works/database_4.svg"]
   }, {
     "id": 9,
     "title": "犬ボクサー",
@@ -88,13 +90,14 @@
   }, {
     "id": 10,
     "title": "ファイティン！",
-    "image": "/images/works/fighters.jpg",
+    "image": "/images/works/fighters.png",
     "year": 2023,
     "type": "illustration",
     "category": "顧客依頼",
     "client": "拳擊交流同好會",
     "description": "スポーツ選手向け応援イラスト",
-    "tools": ["Adobe Photoshop", "Procreate"]
+    "tools": ["Adobe Photoshop", "Procreate"],
+    "detail": ["/images/works/KombatRules-01.png", "/images/works/KombatRules-02.png", "/images/works/KombatRules-03.png", "/images/works/KombatRules-04.png"]
   }, {
     "id": 11,
     "title": "櫛稲の群像",
@@ -153,7 +156,8 @@
     "type": "graphic",
     "category": "オリジナル",
     "description": "ヨガ動物のイラスト",
-    "tools": ["Adobe Illustrator"]
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/yoga_animal_1.svg", "/images/works/yoga_animal_2.svg", "/images/works/yoga_animal_3.svg", "/images/works/yoga_animal_4.svg", "/images/works/yoga_animal_5.svg", "/images/works/yoga_animal_6.svg"]
   }, {
     "id": 17,
     "title": "タイソン",

@@ -20,7 +20,19 @@ const notoSansJP = Noto_Sans_JP({
 
 export const metadata: Metadata = {
   title: "LIUCHIAWEI | ポートフォリオサイト",
-  description: "イラストレーター Liu Chaiweiのポートフォリオサイト",
+  description: "イラストレーター Liu Chiawei のポートフォリオサイト",
+  openGraph: {
+    type: "website",
+    locale: "ja",
+    url: "https://liuchiawei.vercel.app",
+    title: "LIUCHIAWEI | ポートフォリオサイト",
+    description: "イラストレーター Liu Chiawei のポートフォリオサイト",
+    images: [
+      {
+        url: "/images/ico.svg",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

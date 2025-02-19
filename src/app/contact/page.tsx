@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/button";
 import { Icon } from "@iconify/react";
 
 export default function Contact() {
-  const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
-  const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
-  const PUBLIC_KEY = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+  const SERVICE_ID: string | undefined = "service_7u1ldpv";
+  const TEMPLATE_ID: string | undefined = "template_bcovs1m";
+  const PUBLIC_KEY: string | undefined = "1oVQZvkvHnGTmGUl9";
   const [formData, setFormData] = useState({
     user_name: "",
     user_email: "",
@@ -20,9 +20,7 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
-      alert(
-        "申し訳ありません。只今メールサービスが利用できません。"
-      );
+      alert("申し訳ありません。只今メールサービスが利用できません。");
       setIsSubmitting(false);
       return;
     }

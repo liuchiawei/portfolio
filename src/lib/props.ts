@@ -28,4 +28,5 @@ export interface WorksProps {
   description: string;
   link?: string;
   tools: string[];
+  detail?: string[];
 }
