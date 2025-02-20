@@ -180,7 +180,7 @@ const KatakanaTitle: React.FC<KatakanaTitleProps> = (
     return (
       <span
         className={cn(
-          "inline-block text-4xl font-bold",
+          "inline-block",
           className
         )}
         {...props}
