@@ -1,8 +1,7 @@
 import { Timeline } from "@/components/ui/timeline";
 import { TimelineEntry, TimelineHeader } from "@/lib/props";
 import NameCard from "@/components/NameCard";
-import { RadialCluster } from "@/components/RadialCluster";
-import { TreeNode } from "@/lib/props";
+import { RadialCluster, Node } from "@/components/RadialCluster";
 
 export default function About() {
   return (
@@ -63,7 +62,7 @@ const data: TimelineEntry[] = [
   },
 ];
 
-const skillSet: TreeNode = {
+const skillSet: Node = {
   name: "技能",
   children: [
     {
@@ -84,7 +83,7 @@ const skillSet: TreeNode = {
         { name: "UI/UX", children: [{ name: "Figma" }] },
         {
           name: "動画",
-          children: [{ name: "Adobe Premiere" }],
+          children: [{ name: "Adobe Premiere Pro" }],
         },
       ],
     },

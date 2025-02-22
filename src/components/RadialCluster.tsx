@@ -16,12 +16,12 @@ interface RadialClusterProps {
   className?: string;
 }
 
-export function RadialCluster({
+export const RadialCluster = ({
   data,
   width = 932,
   height = 932,
   className,
-}: RadialClusterProps) {
+}: RadialClusterProps) => {
   const ref = useRef<SVGSVGElement | null>(null);
 
   useEffect(() => {
