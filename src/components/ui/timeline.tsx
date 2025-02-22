@@ -26,13 +26,23 @@ export const Timeline = ({ data, header }: { data: TimelineEntry[], header: Time
 
   return (
     <div className="w-full md:px-10" ref={containerRef}>
-      <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 max-w-4xl font-black">
+      <div className="mx-auto py-20 px-4 md:px-8 lg:px-10">
+        <motion.h1
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: -50 }}
+          transition={{ duration: 0.8 }}
+          className="text-4xl mb-4 max-w-4xl font-black"
+        >
           {header.title}
-        </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
+        </motion.h1>
+        <motion.p
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: -50 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-gray-700 dark:text-gray-300 text-sm md:text-base max-w-sm"
+        >
           {header.content}
-        </p>
+        </motion.p>
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">

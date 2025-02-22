@@ -1,10 +1,16 @@
 import { Timeline } from "@/components/ui/timeline";
 import { TimelineEntry, TimelineHeader } from "@/lib/props";
 import NameCard from "@/components/NameCard";
+import { RadialCluster, Node } from "@/components/RadialCluster";
+
 export default function About() {
   return (
-    <div className="w-full max-w-6xl mx-auto">
+    <div className="w-full max-w-7xl mx-auto">
       <NameCard />
+      <h2 className="hidden md:block text-4xl mt-12 text-center font-black">
+        私のスキルセット
+      </h2>
+      <RadialCluster data={skillSet} className="w-full" />
       <Timeline data={data} header={header} />
     </div>
   );
@@ -58,3 +64,83 @@ const data: TimelineEntry[] = [
     emoji: "💻",
   },
 ];
+
+const skillSet: Node = {
+  name: "スキル",
+  children: [
+    {
+      name: "デザイン",
+      children: [
+        {
+          name: "グラフィック",
+          children: [
+            { name: "Illustrator" },
+            { name: "Photoshop" },
+            { name: "InDesign" },
+            { name: "Procreate" },
+          ],
+        },
+        { name: "UI/UX", children: [{ name: "Figma" }] },
+        {
+          name: "写真・動画",
+          children: [{ name: "Premiere" }, { name: "Lightroom" }],
+        },
+      ],
+    },
+    {
+      name: "フロントエンド",
+      children: [
+        {
+          name: "言語・基礎",
+          children: [
+            { name: "HTML" },
+            { name: "CSS" },
+            { name: "JavaScript" },
+            { name: "TypeScript" },
+          ],
+        },
+        {
+          name: "フレームワーク",
+          children: [
+            { name: "jQuery" },
+            { name: "React" },
+            { name: "Next.js" },
+          ],
+        },
+        {
+          name: "UI",
+          children: [
+            { name: "Tailwind CSS" },
+            { name: "shadcn/ui" },
+            { name: "MUI" },
+          ],
+        },
+        {
+          name: "アニメーション",
+          children: [{ name: "Motion" }, { name: "react-spring" }],
+        },
+        {
+          name: "データの可視化",
+          children: [{ name: "Recharts" }, { name: "D3.js" }],
+        },
+        {
+          name: "3D",
+          children: [{ name: "Three.js" }, { name: "R3F" }, { name: "Resium" }],
+        },
+      ],
+    },
+    {
+      name: "バックエンド",
+      children: [
+        {
+          name: "言語・基礎",
+          children: [{ name: "Node.js" }, { name: "PHP" }, { name: "Python" }],
+        },
+        {
+          name: "データベース",
+          children: [{ name: "MySQL" }, { name: "MariaDB" }],
+        },
+      ],
+    },
+  ],
+};

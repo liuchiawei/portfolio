@@ -30,3 +30,8 @@ export interface WorksProps {
   tools: string[];
   detail?: string[];
 }
+
+export interface TreeNode {
+  name: string;
+  children?: TreeNode[];
+}
