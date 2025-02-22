@@ -1,10 +1,13 @@
 import { Timeline } from "@/components/ui/timeline";
 import { TimelineEntry, TimelineHeader } from "@/lib/props";
 import NameCard from "@/components/NameCard";
+import { RadialCluster, Node } from "@/components/RadialCluster";
+
 export default function About() {
   return (
     <div className="w-full max-w-6xl mx-auto">
       <NameCard />
+      <RadialCluster data={skillSet} />
       <Timeline data={data} header={header} />
     </div>
   );
@@ -58,3 +61,94 @@ const data: TimelineEntry[] = [
     emoji: "💻",
   },
 ];
+
+const skillSet: Node = {
+  name: "技能",
+  children: [
+    {
+      name: "デザイン",
+      children: [
+        {
+          name: "グラフィック",
+          children: [
+            { name: "Adobe Illustrator" },
+            { name: "Adobe Photoshop" },
+            { name: "Adobe Lightroom" },
+          ],
+        },
+        {
+          name: "イラスト",
+          children: [{ name: "Procreate" }],
+        },
+        { name: "UI/UX", children: [{ name: "Figma" }] },
+        {
+          name: "動画",
+          children: [{ name: "Adobe Premiere" }],
+        },
+      ],
+    },
+    {
+      name: "プログラミング",
+      children: [
+        {
+          name: "フレームワーク",
+          children: [
+            { name: "jQuery", children: [] },
+            { name: "Next.js", children: [] },
+            { name: "React", children: [] },
+          ],
+        },
+        {
+          name: "言語",
+          children: [
+            { name: "TypeScript", children: [] },
+            { name: "JavaScript", children: [] },
+            { name: "PHP", children: [] },
+            { name: "Python", children: [] },
+          ],
+        },
+        {
+          name: "フロントエンド",
+          children: [
+            {
+              name: "UI",
+              children: [
+                { name: "Tailwind CSS", children: [] },
+                { name: "Shadcn/UI", children: [] },
+              ],
+            },
+            {
+              name: "アニメーション",
+              children: [
+                { name: "Motion/Framer Motion", children: [] },
+                { name: "Spring", children: [] },
+              ],
+            },
+            {
+              name: "チャート",
+              children: [
+                { name: "Recharts", children: [] },
+                { name: "D3.js", children: [] },
+              ],
+            },
+            {
+              name: "3D",
+              children: [{ name: "Three.js", children: [] }],
+            },
+          ],
+        },
+        {
+          name: "バックエンド",
+          children: [
+            { name: "Node.js", children: [] },
+            { name: "PHP", children: [] },
+          ],
+        },
+        {
+          name: "データベース",
+          children: [{ name: "MySQL", children: [] }],
+        },
+      ],
+    },
+  ],
+};
