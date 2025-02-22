@@ -5,9 +5,12 @@ import { RadialCluster, Node } from "@/components/RadialCluster";
 
 export default function About() {
   return (
-    <div className="w-full max-w-6xl mx-auto">
+    <div className="w-full max-w-7xl mx-auto">
       <NameCard />
-      <RadialCluster data={skillSet} />
+      <h2 className="hidden md:block text-4xl mt-12 text-center font-black">
+        私のスキルセット
+      </h2>
+      <RadialCluster data={skillSet} className="w-full" />
       <Timeline data={data} header={header} />
     </div>
   );
@@ -63,7 +66,7 @@ const data: TimelineEntry[] = [
 ];
 
 const skillSet: Node = {
-  name: "技能",
+  name: "スキル",
   children: [
     {
       name: "デザイン",
@@ -71,82 +74,71 @@ const skillSet: Node = {
         {
           name: "グラフィック",
           children: [
-            { name: "Adobe Illustrator" },
-            { name: "Adobe Photoshop" },
-            { name: "Adobe Lightroom" },
+            { name: "Illustrator" },
+            { name: "Photoshop" },
+            { name: "InDesign" },
+            { name: "Procreate" },
           ],
-        },
-        {
-          name: "イラスト",
-          children: [{ name: "Procreate" }],
         },
         { name: "UI/UX", children: [{ name: "Figma" }] },
         {
-          name: "動画",
-          children: [{ name: "Adobe Premiere Pro" }],
+          name: "写真・動画",
+          children: [{ name: "Premiere" }, { name: "Lightroom" }],
         },
       ],
     },
     {
-      name: "プログラミング",
+      name: "フロントエンド",
       children: [
+        {
+          name: "言語・基礎",
+          children: [
+            { name: "HTML" },
+            { name: "CSS" },
+            { name: "JavaScript" },
+            { name: "TypeScript" },
+          ],
+        },
         {
           name: "フレームワーク",
           children: [
-            { name: "jQuery", children: [] },
-            { name: "Next.js", children: [] },
-            { name: "React", children: [] },
+            { name: "jQuery" },
+            { name: "React" },
+            { name: "Next.js" },
           ],
         },
         {
-          name: "言語",
+          name: "UI",
           children: [
-            { name: "TypeScript", children: [] },
-            { name: "JavaScript", children: [] },
-            { name: "PHP", children: [] },
-            { name: "Python", children: [] },
+            { name: "Tailwind CSS" },
+            { name: "shadcn/ui" },
+            { name: "MUI" },
           ],
         },
         {
-          name: "フロントエンド",
-          children: [
-            {
-              name: "UI",
-              children: [
-                { name: "Tailwind CSS", children: [] },
-                { name: "Shadcn/UI", children: [] },
-              ],
-            },
-            {
-              name: "アニメーション",
-              children: [
-                { name: "Motion/Framer Motion", children: [] },
-                { name: "Spring", children: [] },
-              ],
-            },
-            {
-              name: "チャート",
-              children: [
-                { name: "Recharts", children: [] },
-                { name: "D3.js", children: [] },
-              ],
-            },
-            {
-              name: "3D",
-              children: [{ name: "Three.js", children: [] }],
-            },
-          ],
+          name: "アニメーション",
+          children: [{ name: "Motion" }, { name: "react-spring" }],
         },
         {
-          name: "バックエンド",
-          children: [
-            { name: "Node.js", children: [] },
-            { name: "PHP", children: [] },
-          ],
+          name: "データの可視化",
+          children: [{ name: "Recharts" }, { name: "D3.js" }],
+        },
+        {
+          name: "3D",
+          children: [{ name: "Three.js" }, { name: "R3F" }, { name: "Resium" }],
+        },
+      ],
+    },
+    {
+      name: "バックエンド",
+      children: [
+        {
+          name: "言語・基礎",
+          children: [{ name: "Node.js" }, { name: "PHP" }, { name: "Python" }],
         },
         {
           name: "データベース",
-          children: [{ name: "MySQL", children: [] }],
+          children: [{ name: "MySQL" }, { name: "MariaDB" }],
         },
       ],
     },

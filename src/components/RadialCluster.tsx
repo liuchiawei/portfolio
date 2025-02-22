@@ -3,6 +3,7 @@
 import * as d3 from "d3";
 import { useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
+import { useIsMobile } from "@/hooks/useMobile";
 
 export interface Node {
   name: string;
@@ -11,116 +12,101 @@ export interface Node {
 
 interface RadialClusterProps {
   data: Node;
-  width?: number;
-  height?: number;
+  size?: number;
   className?: string;
 }
 
 export const RadialCluster = ({
   data,
-  width = 932,
-  height = 932,
+  size = 900,
   className,
 }: RadialClusterProps) => {
   const ref = useRef<SVGSVGElement | null>(null);
-
+  const isMobile = useIsMobile();
+  
   useEffect(() => {
-    if (!data) return;
+    if (!data || isMobile) return;
 
-    // 1. 设置画布
     const svg = d3.select(ref.current);
-    svg.selectAll("*").remove(); // 先清空，避免重复绘制
+    svg.selectAll("*").remove();
 
-    // 2. 创建层级数据
     const root = d3.hierarchy<Node>(data);
+    const radius = size / 2;
 
-    // 3. 使用 d3.tree() + 径向布局
-    // d3.tree() 可以通过 .size() 来控制布局范围
-    // 通常我们传 [2π, r] 来生成极坐标
-    const radius = Math.min(width, height) / 2; 
-    const treeLayout = d3
-      .tree<Node>()
-      .size([2 * Math.PI, radius - 100]); // 留点边距
+    // 使用 cluster 布局替代 tree 布局
+    const cluster = d3.cluster<Node>().size([2 * Math.PI, radius - 60]);
 
-    const treeRoot = treeLayout(root);
+    const clusterData = cluster(root);
 
-    // 4. 将极坐标转换成 x, y
-    //    x 是角度(0~2π)，y 是半径
-    const nodes = treeRoot.descendants();
-    const links = treeRoot.links();
-
-    // 这里将极坐标映射到平面坐标
-    function project(d: { x: number; y: number }) {
-      const r = d.y;
-      const a = d.x;
+    // 新的座標映射函數
+    const project = (d: d3.HierarchyPointNode<Node>) => {
+      const r = d.depth * (radius / 4);
+      const a = d.x - Math.PI / 1;
+      // const a = d.x - Math.PI / 2;
       return [r * Math.cos(a), r * Math.sin(a)];
-    }
+    };
 
-    // 5. 绘制链接（edges）
+    // 繪製連接線（使用自然曲線）
     svg
       .append("g")
-      .attr("transform", `translate(${width / 2},${height / 2})`) // 原点放在画布中心
-      .attr("fill", "none")
-      .attr("stroke", "#c0c0c0")
-      .attr("stroke-opacity", 0.5)
-      .attr("stroke-linejoin", "round")
-      .attr("stroke-linecap", "round")
-      .attr("stroke-width", 1.5)
+      .attr("transform", `translate(${size / 2},${size / 2})`)
       .selectAll("path")
-      .data(links)
+      .data(clusterData.links())
       .join("path")
       .attr("d", (d) => {
-        const start = project(d.source);
-        const end = project(d.target);
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        return d3.line<any>()
-          .curve(d3.curveBundle.beta(0.5))
-          ([start, end]);
-      });
+        const source = project(d.source) as [number, number];
+        const target = project(d.target) as [number, number];
+        return d3.line().curve(d3.curveBumpX)([source, target] as [
+          number,
+          number
+        ][]);
+      })
+      .attr("fill", "none")
+      .attr("stroke", "#d08a20")
+      .attr("stroke-opacity", 0.4)
+      .attr("stroke-width", 1.5);
 
-    // 6. 绘制节点
-    const nodeGroup = svg
+    // 繪製節點
+    const nodes = svg
       .append("g")
-      .attr("transform", `translate(${width / 2},${height / 2})`)
+      .attr("transform", `translate(${size / 2},${size / 2})`)
       .selectAll("g")
-      .data(nodes)
+      .data(clusterData.descendants())
       .join("g")
-      .attr("transform", (d) => {
-        const [x, y] = project(d);
-        return `translate(${x},${y})`;
-      });
+      .attr("transform", (d) => `translate(${project(d)})`);
 
-    // 节点圆
-    nodeGroup
+    nodes
       .append("circle")
-      .attr("r", 4)
-      .attr("fill", "#69b3a2");
+      .attr("r", 5)
+      .attr("fill", "#f0a946")
+      .attr("stroke", "white")
+      .attr("stroke-width", 1.5);
 
-    // 节点文字
-    nodeGroup
+    nodes
       .append("text")
-      .attr("dy", "0.31em")
-      .attr("x", (d) => (d.x < Math.PI === !d.children ? 6 : -6))
-      .attr("text-anchor", (d) =>
-        d.x < Math.PI === !d.children ? "start" : "end"
-      )
-      // .attr("transform", (d) =>
-      //   d.x >= Math.PI ? "rotate(180)" : "rotate(0)"
-      // )
+      .attr("dy", (d) => (d.x > Math.PI ? "1.5em" : "-1.5em"))
+      .attr("text-anchor", "middle")
+      // .attr("text-anchor", (d) => (d.x < Math.PI ? "start" : "end"))
+      // .attr("transform", (d) => `rotate(${(d.x * 180) / Math.PI - 90}))`)
       .text((d) => d.data.name)
-      .style("font-family", "sans-serif")
-      .style("font-size", "12px")
-      // .style("fill", "white");
-  }, [data, width, height]);
+      // .style("font-size", "14px")
+      .style("text-align", "center");
+  }, [data, size, isMobile]);
 
+  if (isMobile) return null;  
   return (
-    <div className={cn("w-full h-full", className)}>
+    <div
+      className={cn(
+        "overflow-hidden flex justify-center items-center",
+        className
+      )}
+    >
       <svg
         ref={ref}
-        width={width}
-        height={height}
-        className="mx-auto text-foreground *:fill-foreground"
+        width={size}
+        height={size}
+        className="mx-auto text-foreground *:fill-foreground *:text-md"
       />
     </div>
   );
-}
+};
