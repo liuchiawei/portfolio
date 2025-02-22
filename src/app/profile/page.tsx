@@ -1,7 +1,8 @@
 import { Timeline } from "@/components/ui/timeline";
 import { TimelineEntry, TimelineHeader } from "@/lib/props";
 import NameCard from "@/components/NameCard";
-import { RadialCluster, Node } from "@/components/RadialCluster";
+import { RadialCluster } from "@/components/RadialCluster";
+import { TreeNode } from "@/lib/props";
 
 export default function About() {
   return (
@@ -62,7 +63,7 @@ const data: TimelineEntry[] = [
   },
 ];
 
-const skillSet: Node = {
+const skillSet: TreeNode = {
   name: "技能",
   children: [
     {
