@@ -4,7 +4,13 @@ import React, { useEffect, useRef, useState } from "react";
 import { TimelineEntry, TimelineHeader } from "@/lib/props";
 import ScrollUpItem from "@/components/ScrollUpItem";
 
-export const Timeline = ({ data, header }: { data: TimelineEntry[], header: TimelineHeader }) => {
+export const Timeline = ({
+  data,
+  header,
+}: {
+  data: TimelineEntry[];
+  header: TimelineHeader;
+}) => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
@@ -66,8 +72,22 @@ export const Timeline = ({ data, header }: { data: TimelineEntry[], header: Time
               <h3 className="md:hidden block text-2xl mb-2 text-left text-neutral-400 dark:text-neutral-600">
                 {item.year}
               </h3>
-              <h1 className="text-4xl md:text-5xl font-black mb-4">{item.title}</h1>
-              <p className="text-justify">{item.content}</p>
+              <motion.h1
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -50 }}
+                transition={{ duration: 0.6 }}
+                className="text-4xl md:text-5xl font-black mb-4"
+              >
+                {item.title}
+              </motion.h1>
+              <motion.p
+                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="text-justify"
+              >
+                {item.content}
+              </motion.p>
               <ScrollUpItem emoji={item.emoji} />
             </div>
           </div>
