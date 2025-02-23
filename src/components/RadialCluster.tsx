@@ -11,7 +11,7 @@ export interface Node {
 }
 
 interface RadialClusterProps {
-  data: Node;
+  data: Node[];
   size?: number;
   className?: string;
 }
@@ -30,7 +30,7 @@ export const RadialCluster = ({
     const svg = d3.select(ref.current);
     svg.selectAll("*").remove();
 
-    const root = d3.hierarchy<Node>(data);
+    const root = d3.hierarchy<Node>(data[0]);
     const radius = size / 2;
 
     // 使用 cluster 布局替代 tree 布局
