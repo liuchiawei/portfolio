@@ -1,6 +1,27 @@
+"use client";
+
 import { useEffect, useRef, useState } from "react";
 import { motion, animate } from "framer-motion";
 import { cn } from "@/lib/utils";
+
+export default function AnimatedCounter({
+  value,
+  className,
+  speed = 0.8,
+}: {
+  value: number;
+  className?: string;
+  speed?: number;
+}) {
+  if (value === 0) {
+    return <div className={cn(className)}>???</div>;
+  }
+  return (
+    <div className={cn(className)}>
+      <Counter from={0} to={Number(value)} duration={speed} />
+    </div>
+  );
+}
 
 const Counter = ({
   from,
@@ -58,20 +79,3 @@ const Counter = ({
     />
   );
 };
-
-export default function AnimatedCounter({
-  value,
-  className,
-}: {
-  value: number;
-  className?: string;
-}) {
-  if (value === 0) {
-    return <div className={cn(className)}>???</div>;
-  }
-  return (
-    <div className={cn(className)}>
-      <Counter from={0} to={Number(value)} duration={0.8} />
-    </div>
-  );
-}
