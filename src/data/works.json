@@ -449,7 +449,7 @@
     "type": "web",
     "category": "オリジナル",
     "description": "仮想アパレルブランドサイト",
-    "link": "ecommerce-my-shirt.vercel.app",
+    "link": "https://ecommerce-my-shirt.vercel.app",
     "tools": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion", "Three.js"]
   },
   {
