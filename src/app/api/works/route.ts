@@ -3,7 +3,7 @@ import type { WorksProps } from "@/lib/props";
 import data from "@/data/works.json";
 
 // TODO: Prisma でデータベースから取得
-const works: WorksProps[] = data;
+const works: WorksProps[] = [...data].reverse();
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);

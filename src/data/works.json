@@ -1,176 +1,238 @@
-[{
+[
+  {
     "id": 1,
-    "title": "世界を変える企業",
-    "image": "/images/works/spinearth.jpg",
-    "year": 2024,
-    "type": "web",
+    "title": "スコヴィルスケール",
+    "image": "/images/works/scoville_thumb.svg",
+    "year": 2012,
+    "type": "infographic",
     "category": "オリジナル",
-    "description": "世界を変える企業のサイト",
-    "link": "https://spinning-earth-opal.vercel.app/",
-    "tools": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion", "Three.js"]
-  }, {
+    "description": "スコヴィル値のインフォグラフィックデザイン",
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/scoville_1.svg"]
+  },
+  {
     "id": 2,
-    "title": "Ninetendo Timeline",
-    "image": "/images/works/nintendo-timeline.png",
-    "year": 2024,
-    "type": "web",
+    "title": "台湾のがん",
+    "image": "/images/works/cancer_2012.svg",
+    "year": 2013,
+    "type": "infographic",
     "category": "オリジナル",
-    "description": "任天堂ゲーム機の歴史サイト",
-    "link": "https://nintendo-timeline.vercel.app/",
-    "tools": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion"]
-  }, {
+    "description": "台湾がん統計調査報告デザイン",
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/cancer_2012_1.svg", "/images/works/details/cancer_2012_2.svg"]
+  },
+  {
     "id": 3,
-    "title": "Deep Shinjuku",
-    "image": "/images/works/deepshinjuku.jpg",
-    "year": 2024,
-    "type": "web",
+    "title": "台湾憲兵",
+    "image": "/images/works/mp_suit_thumb.svg",
+    "year": 2013,
+    "type": "infographic",
     "category": "オリジナル",
-    "description": "新宿の怪談を集めたサイト",
-    "link": "https://deepshinjuku.com/urbanmyth/",
-    "tools": ["PHP", "JavaScript", "CSS"]
-  }, {
+    "description": "台湾憲兵の紹介イラスト",
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/mp_suit_1.svg", "/images/works/details/mp_suit_2.svg"]
+  },
+  {
     "id": 4,
-    "title": "MBTIテスト",
-    "image": "/images/works/mbti.jpg",
-    "year": 2024,
-    "type": "web",
-    "category": "オリジナル",
-    "description": "MBTIテストサイト",
-    "link": "https://deepshinjuku.com/mbti/",
-    "tools": ["JavaScript", "CSS"]
-  }, {
+    "title": "台湾の炭素排出",
+    "image": "/images/works/gas_tw.svg",
+    "year": 2014,
+    "type": "infographic",
+    "category": "顧客依頼",
+    "client": "台湾環境保護署",
+    "description": "台湾の炭素排出量の統計調査報告デザイン",
+    "tools": ["Adobe Illustrator"]
+  },
+  {
     "id": 5,
-    "title": "俺との相性テスト",
-    "image": "/images/works/mytest.jpg",
-    "year": 2024,
+    "title": "Nike Airmax95 誕生の裏側",
+    "image": "/images/works/nike.svg",
+    "year": 2015,
+    "type": "graphic",
+    "category": "顧客依頼",
+    "client": "Nike",
+    "description": "Nike Airmax95 20周年記念キャンペーンのSNS広告デザイン",
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/nike_1.svg"]
+  },
+  {
+    "id": 6,
+    "title": "NBAファイナル戦力図鑑",
+    "image": "/images/works/nba_final_2015_thumb.svg",
+    "year": 2015,
+    "type": "infographic",
+    "category": "オリジナル",
+    "description": "2015年NBAファイナル両チーム戦力の図解",
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/nba_final_2015_1.svg", "/images/works/details/nba_final_2015_2.svg", "/images/works/details/nba_final_2015_3.svg", "/images/works/details/nba_final_2015_4.svg", "/images/works/details/nba_final_2015_5.svg"]
+  },
+  {
+    "id": 7,
+    "title": "交通安全",
+    "image": "/images/works/traffic_safety.svg",
+    "year": 2015,
+    "type": "graphic",
+    "category": "顧客依頼",
+    "client": "台北市政府",
+    "description": "台北の交通安全政策SNS広告",
+    "tools": ["Adobe Illustrator"]
+  },
+  {
+    "id": 8,
+    "title": "Ford New Focus",
+    "image": "/images/works/ford_focus_thumb.svg",
+    "year": 2015,
+    "type": "graphic",
+    "category": "顧客依頼",
+    "client": "Ford",
+    "description": "フォード・ニュー・フォーカスのイラスト",
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/ford_focus_1.svg", "/images/works/details/ford_focus_2.svg", "/images/works/details/ford_focus_3.svg"]
+  },
+  {
+    "id": 9,
+    "title": "アイラ島のウイスキーの威士忌",
+    "image": "/images/works/whisky.svg",
+    "year": 2015,
+    "type": "graphic",
+    "category": "顧客依頼",
+    "client": "非公開",
+    "description": "アイラ島のウイスキーのSNS広告",
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/whisky_1.svg", "/images/works/details/whisky_2.svg", "/images/works/details/whisky_3.svg", "/images/works/details/whisky_4.svg", "/images/works/details/whisky_5.svg", "/images/works/details/whisky_6.svg"]
+  },
+  {
+    "id": 10,
+    "title": "人間のあるある",
+    "image": "/images/works/asynodia.svg",
+    "year": 2015,
+    "type": "graphic",
+    "category": "顧客依頼",
+    "client": "非公開",
+    "description": "人間のイラスト",
+    "tools": ["Adobe Illustrator"]
+  },
+  {
+    "id": 11,
+    "title": "雷神図鑑",
+    "image": "/images/works/thundergod_thumb.svg",
+    "year": 2016,
+    "type": "infographic",
+    "category": "オリジナル",
+    "description": "世界神話の雷神図鑑",
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/thundergod_1.svg", "/images/works/details/thundergod_2.svg", "/images/works/details/thundergod_3.svg", "/images/works/details/thundergod_4.svg", "/images/works/details/thundergod_5.svg"]
+  },
+  {
+    "id": 12,
+    "title": "死神図鑑",
+    "image": "/images/works/deathgod_thumb.svg",
+    "year": 2016,
+    "type": "infographic",
+    "category": "オリジナル",
+    "description": "世界神話の死神図鑑",
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/deathgod_1.svg", "/images/works/details/deathgod_2.svg", "/images/works/details/deathgod_3.svg", "/images/works/details/deathgod_4.svg", "/images/works/details/deathgod_5.svg"]
+  },
+  {
+    "id": 13,
+    "title": "台湾もののけ図鑑",
+    "image": "/images/works/mononoke_thumb-01.svg",
+    "year": 2016,
+    "type": "infographic",
+    "category": "オリジナル",
+    "description": "図解台湾のもののけ、魔神仔",
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/mononoke-01.svg", "/images/works/details/mononoke-05.svg", "/images/works/details/mononoke-06.svg", "/images/works/details/mononoke-07.svg", "/images/works/details/mononoke-08.svg", "/images/works/details/mononoke-09.svg"]
+  },
+  {
+    "id": 14,
+    "title": "職場にいるいるあいつ達",
+    "image": "/images/works/mononoke_thumb-02.svg",
+    "year": 2016,
+    "type": "infographic",
+    "category": "オリジナル",
+    "description": "職場によくいる人を集めたイラスト",
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/mononoke-02.svg"]
+  },
+  {
+    "id": 15,
+    "title": "図解台北古城門",
+    "image": "/images/works/tpe_gate_thumb.svg",
+    "year": 2017,
+    "type": "graphic",
+    "category": "オリジナル",
+    "description": "台北古城門のビジュアルガイド",
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/tpe_gate_1.svg", "/images/works/details/tpe_gate_2.svg", "/images/works/details/tpe_gate_3.svg", "/images/works/details/tpe_gate_4.svg"]
+  },
+  {
+    "id": 16,
+    "title": "町の人々",
+    "image": "/images/works/isometric_people.svg",
+    "year": 2018,
+    "type": "graphic",
+    "category": "オリジナル",
+    "description": "都市に住んでいる人々のイラスト",
+    "tools": ["Adobe Illustrator"]
+  },
+  {
+    "id": 17,
+    "title": "感染症ポストカード",
+    "image": "/images/works/tourguide.svg",
+    "year": 2018,
+    "type": "web",
+    "category": "顧客依頼",
+    "client": "info2act",
+    "description": "世界の観光地における感染症ガイドライン",
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/tourguide-01.svg", "/images/works/details/tourguide-02.svg", "/images/works/details/tourguide-03.svg", "/images/works/details/tourguide-04.svg"]
+  },
+  {
+    "id": 18,
+    "title": "中秋三大恐怖奇談",
+    "image": "/images/works/moon_fest_thumb.svg",
+    "year": 2018,
+    "type": "graphic",
+    "category": "顧客依頼",
+    "client": "info2act",
+    "description": "データ可視化デザイン",
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/moon_1.svg", "/images/works/details/moon_2.svg", "/images/works/details/moon_3.svg", "/images/works/details/moon_4.svg"]
+  },
+  {
+    "id": 19,
+    "title": "台北のスカイライン",
+    "image": "/images/works/tpe_skyline.svg",
+    "year": 2018,
+    "type": "graphic",
+    "category": "オリジナル",
+    "description": "台北のスカイラインイラスト",
+    "tools": ["Adobe Illustrator"]
+  },
+  {
+    "id": 20,
+    "title": "台湾百岳図鑑",
+    "image": "/images/works/mountain_100.svg",
+    "year": 2019,
     "type": "web",
     "category": "オリジナル",
-    "description": "リュウチャーウェイとの相性テストサイト",
-    "link": "https://deepshinjuku.com/test/",
-    "tools": ["JavaScript", "jQuery", "CSS"]
-  }, {
-    "id": 6,
-    "title": "サムライソウル",
-    "image": "/images/works/samurai_soul_thumb.jpg",
-    "year": 2024,
-    "type": "illustration",
-    "category": "オリジナル",
-    "description": "サムライソウルのアルバムイラスト",
-    "tools": ["Adobe Photoshop", "Procreate"]
-  }, {
-    "id": 7,
-    "title": "インターネットの歴史",
-    "image": "/images/works/internet_history.svg",
-    "year": 2024,
-    "type": "infographic",
-    "category": "オリジナル",
-    "description": "インターネットの歴史",
-    "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/internet_history_1.svg", "/images/works/details/internet_history_2.svg", "/images/works/details/internet_history_3.svg", "/images/works/details/internet_history_4.svg", "/images/works/details/internet_history_5.svg"]
-  }, {
-    "id": 8,
-    "title": "データベースとは？",
-    "image": "/images/works/database.svg",
-    "year": 2024,
-    "type": "infographic",
-    "category": "オリジナル",
-    "description": "データベースの基礎概念を解説するインフォグラフィック",
-    "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/database_1.svg", "/images/works/details/database_2.svg", "/images/works/details/database_3.svg", "/images/works/details/database_4.svg"]
-  }, {
-    "id": 9,
-    "title": "犬ボクサー",
-    "image": "/images/works/dogboxer.jpg",
-    "year": 2024,
-    "type": "illustration",
-    "category": "顧客依頼",
-    "client": "非公開",
-    "description": "ボクサーのプロフィールイラスト",
-    "tools": ["Adobe Photoshop", "Procreate"]
-  }, {
-    "id": 10,
-    "title": "ファイティン！",
-    "image": "/images/works/fighters.png",
-    "year": 2023,
-    "type": "illustration",
-    "category": "顧客依頼",
-    "client": "拳擊交流同好會",
-    "description": "スポーツ選手向け応援イラスト",
-    "tools": ["Adobe Photoshop", "Procreate"],
-    "detail": ["/images/works/details/KombatRules-01.png", "/images/works/details/KombatRules-02.png", "/images/works/details/KombatRules-03.png", "/images/works/details/KombatRules-04.png"]
-  }, {
-    "id": 11,
-    "title": "櫛稲の群像",
-    "image": "/images/works/kushunada.svg",
-    "year": 2022,
-    "type": "illustration",
-    "category": "顧客依頼",
-    "client": "株式会社櫛稲",
-    "description": "株式会社櫛稲公式サイトのイラスト",
-    "link": "https://kushunada.jp/",
+    "description": "台湾の最も高い100座の山を図解",
     "tools": ["Adobe Illustrator"]
-  }, {
-    "id": 12,
-    "title": "ボクサー忍者",
-    "image": "/images/works/ninja.svg",
-    "year": 2022,
-    "type": "logo",
-    "category": "顧客依頼",
-    "client": "非公開",
-    "description": "ボクサーのロゴデザイン",
-    "tools": ["Adobe Illustrator"]
-  }, {
-    "id": 13,
-    "title": "ムエタイ狼牙",
-    "image": "/images/works/muaythaiwu_logo.svg",
-    "year": 2022,
-    "type": "logo",
-    "category": "顧客依頼",
-    "client": "非公開",
-    "description": "格闘技選手のロゴデザイン",
-    "tools": ["Adobe Illustrator"]
-  }, {
-    "id": 14,
-    "title": "夢を語る",
-    "image": "/images/works/poster_eastwest_thumbnail.jpg",
-    "year": 2022,
-    "type": "illustration",
-    "category": "顧客依頼",
-    "client": "日本語学校イストウェスト",
-    "description": "日本語学校イストウェストのスピーチコンテストポスターデザイン",
-    "tools": ["Adobe Illustrator", "Procreate"],
-    "detail": ["/images/works/details/poster_eastwest.png"]
-  }, {
-    "id": 15,
-    "title": "ボクサーたち",
-    "image": "/images/works/podcast.jpg",
-    "year": 2022,
-    "type": "illustration",
-    "category": "顧客依頼",
-    "client": "拳擊交流同好会",
-    "description": "ボクシングポッドキャストのプロフィールイラスト",
-    "tools": ["Adobe Photoshop", "Procreate"]
-  }, {
-    "id": 16,
-    "title": "ヨガ動物",
-    "image": "/images/works/yoga_animals.svg",
-    "year": 2021,
+  },
+  {
+    "id": 21,
+    "title": "スポーツ図鑑",
+    "image": "/images/works/sports_thumb.svg",
+    "year": 2019,
     "type": "graphic",
     "category": "オリジナル",
-    "description": "ヨガ動物のイラスト",
-    "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/yoga_animal_1.svg", "/images/works/yoga_animal_2.svg", "/images/works/yoga_animal_3.svg", "/images/works/yoga_animal_4.svg", "/images/works/yoga_animal_5.svg", "/images/works/yoga_animal_6.svg"]
-  }, {
-    "id": 17,
-    "title": "タイソン",
-    "image": "/images/works/tyson.svg",
-    "year": 2021,
-    "type": "graphic",
-    "category": "オリジナル",
-    "description": "ボクシングチャンピオンタイソンの紹介",
+    "description": "東京オリンピック向けのスポーツポスター",
     "tools": ["Adobe Illustrator"]
-  }, {
-    "id": 18,
+  },
+  {
+    "id": 22,
     "title": "シェアリングエコノミー新時代",
     "image": "/images/works/yahoo_news.svg",
     "year": 2019,
@@ -181,208 +243,97 @@
     "tools": ["Adobe Illustrator"]
   },
   {
-    "id": 19,
-    "title": "台湾百岳図鑑",
-    "image": "/images/works/mountain_100.svg",
-    "year": 2019,
-    "type": "web",
-    "category": "オリジナル",
-    "description": "台湾の最も高い100座の山を図解",
-    "tools": ["Adobe Illustrator"]
-  }, {
-    "id": 20,
-    "title": "スポーツ図鑑",
-    "image": "/images/works/sports_thumb.svg",
-    "year": 2019,
-    "type": "graphic",
-    "category": "オリジナル",
-    "description": "東京オリンピック向けのスポーツポスター",
-    "tools": ["Adobe Illustrator"]
-  }, {
-    "id": 21,
-    "title": "町の人々",
-    "image": "/images/works/isometric_people.svg",
-    "year": 2018,
-    "type": "graphic",
-    "category": "オリジナル",
-    "description": "都市に住んでいる人々のイラスト",
-    "tools": ["Adobe Illustrator"]
-  }, {
-    "id": 22,
-    "title": "感染症ポストカード",
-    "image": "/images/works/tourguide.svg",
-    "year": 2018,
-    "type": "web",
-    "category": "顧客依頼",
-    "client": "info2act",
-    "description": "世界の観光地における感染症ガイドライン",
-    "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/tourguide-01.svg", "/images/works/details/tourguide-02.svg", "/images/works/details/tourguide-03.svg", "/images/works/details/tourguide-04.svg"]
-  }, {
     "id": 23,
-    "title": "中秋三大恐怖奇談",
-    "image": "/images/works/moon_fest_thumb.svg",
-    "year": 2018,
+    "title": "タイソン",
+    "image": "/images/works/tyson.svg",
+    "year": 2021,
     "type": "graphic",
-    "category": "顧客依頼",
-    "client": "info2act",
-    "description": "データ可視化デザイン",
-    "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/moon_1.svg", "/images/works/details/moon_2.svg", "/images/works/details/moon_3.svg", "/images/works/details/moon_4.svg"]
-  }, {
+    "category": "オリジナル",
+    "description": "ボクシングチャンピオンタイソンの紹介",
+    "tools": ["Adobe Illustrator"]
+  },
+  {
     "id": 24,
-    "title": "台北のスカイライン",
-    "image": "/images/works/tpe_skyline.svg",
-    "year": 2018,
+    "title": "ヨガ動物",
+    "image": "/images/works/yoga_animals.svg",
+    "year": 2021,
     "type": "graphic",
     "category": "オリジナル",
-    "description": "台北のスカイラインイラスト",
-    "tools": ["Adobe Illustrator"]
-  }, {
+    "description": "ヨガ動物のイラスト",
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/yoga_animal_1.svg", "/images/works/yoga_animal_2.svg", "/images/works/yoga_animal_3.svg", "/images/works/yoga_animal_4.svg", "/images/works/yoga_animal_5.svg", "/images/works/yoga_animal_6.svg"]
+  },
+  {
     "id": 25,
-    "title": "図解台北古城門",
-    "image": "/images/works/tpe_gate_thumb.svg",
-    "year": 2017,
-    "type": "graphic",
-    "category": "オリジナル",
-    "description": "台北古城門のビジュアルガイド",
-    "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/tpe_gate_1.svg", "/images/works/details/tpe_gate_2.svg", "/images/works/details/tpe_gate_3.svg", "/images/works/details/tpe_gate_4.svg"]
-  }, {
+    "title": "櫛稲の群像",
+    "image": "/images/works/kushunada.svg",
+    "year": 2022,
+    "type": "illustration",
+    "category": "顧客依頼",
+    "client": "株式会社櫛稲",
+    "description": "株式会社櫛稲公式サイトのイラスト",
+    "link": "https://kushunada.jp/",
+    "tools": ["Adobe Illustrator"]
+  },
+  {
     "id": 26,
-    "title": "雷神図鑑",
-    "image": "/images/works/thundergod_thumb.svg",
-    "year": 2016,
-    "type": "infographic",
-    "category": "オリジナル",
-    "description": "世界神話の雷神図鑑",
-    "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/thundergod_1.svg", "/images/works/details/thundergod_2.svg", "/images/works/details/thundergod_3.svg", "/images/works/details/thundergod_4.svg", "/images/works/details/thundergod_5.svg"]
-  }, {
+    "title": "ボクサー忍者",
+    "image": "/images/works/ninja.svg",
+    "year": 2022,
+    "type": "logo",
+    "category": "顧客依頼",
+    "client": "非公開",
+    "description": "ボクサーのロゴデザイン",
+    "tools": ["Adobe Illustrator"]
+  },
+  {
     "id": 27,
-    "title": "死神図鑑",
-    "image": "/images/works/deathgod_thumb.svg",
-    "year": 2016,
-    "type": "infographic",
-    "category": "オリジナル",
-    "description": "世界神話の死神図鑑",
-    "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/deathgod_1.svg", "/images/works/details/deathgod_2.svg", "/images/works/details/deathgod_3.svg", "/images/works/details/deathgod_4.svg", "/images/works/details/deathgod_5.svg"]
-  }, {
+    "title": "ムエタイ狼牙",
+    "image": "/images/works/muaythaiwu_logo.svg",
+    "year": 2022,
+    "type": "logo",
+    "category": "顧客依頼",
+    "client": "非公開",
+    "description": "格闘技選手のロゴデザイン",
+    "tools": ["Adobe Illustrator"]
+  },
+  {
     "id": 28,
-    "title": "人間のあるある",
-    "image": "/images/works/asynodia.svg",
-    "year": 2015,
-    "type": "graphic",
+    "title": "夢を語る",
+    "image": "/images/works/poster_eastwest_thumbnail.jpg",
+    "year": 2022,
+    "type": "illustration",
     "category": "顧客依頼",
-    "client": "非公開",
-    "description": "人間のイラスト",
-    "tools": ["Adobe Illustrator"]
-  }, {
+    "client": "日本語学校イストウェスト",
+    "description": "日本語学校イストウェストのスピーチコンテストポスターデザイン",
+    "tools": ["Adobe Illustrator", "Procreate"],
+    "detail": ["/images/works/details/poster_eastwest.png"]
+  },
+  {
     "id": 29,
-    "title": "台湾もののけ図鑑",
-    "image": "/images/works/mononoke_thumb-01.svg",
-    "year": 2016,
-    "type": "infographic",
-    "category": "オリジナル",
-    "description": "図解台湾のもののけ、魔神仔",
-    "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/mononoke-01.svg", "/images/works/details/mononoke-05.svg", "/images/works/details/mononoke-06.svg", "/images/works/details/mononoke-07.svg", "/images/works/details/mononoke-08.svg", "/images/works/details/mononoke-09.svg"]
-  }, {
+    "title": "ボクサーたち",
+    "image": "/images/works/podcast.jpg",
+    "year": 2022,
+    "type": "illustration",
+    "category": "顧客依頼",
+    "client": "拳擊交流同好会",
+    "description": "ボクシングポッドキャストのプロフィールイラスト",
+    "tools": ["Adobe Photoshop", "Procreate"]
+  },
+  {
     "id": 30,
-    "title": "職場にいるいるあいつ達",
-    "image": "/images/works/mononoke_thumb-02.svg",
-    "year": 2016,
-    "type": "infographic",
-    "category": "オリジナル",
-    "description": "職場によくいる人を集めたイラスト",
-    "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/mononoke-02.svg"]
-  }, {
+    "title": "ファイティン！",
+    "image": "/images/works/fighters.png",
+    "year": 2023,
+    "type": "illustration",
+    "category": "顧客依頼",
+    "client": "拳擊交流同好會",
+    "description": "スポーツ選手向け応援イラスト",
+    "tools": ["Adobe Photoshop", "Procreate"],
+    "detail": ["/images/works/details/KombatRules-01.png", "/images/works/details/KombatRules-02.png", "/images/works/details/KombatRules-03.png", "/images/works/details/KombatRules-04.png"]
+  },
+  {
     "id": 31,
-    "title": "Nike Airmax95 誕生の裏側",
-    "image": "/images/works/nike.svg",
-    "year": 2015,
-    "type": "graphic",
-    "category": "顧客依頼",
-    "client": "Nike",
-    "description": "Nike Airmax95 20周年記念キャンペーンのSNS広告デザイン",
-    "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/nike_1.svg"]
-  }, {
-    "id": 32,
-    "title": "NBAファイナル戦力図鑑",
-    "image": "/images/works/nba_final_2015_thumb.svg",
-    "year": 2015,
-    "type": "infographic",
-    "category": "オリジナル",
-    "description": "2015年NBAファイナル両チーム戦力の図解",
-    "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/nba_final_2015_1.svg", "/images/works/details/nba_final_2015_2.svg", "/images/works/details/nba_final_2015_3.svg", "/images/works/details/nba_final_2015_4.svg", "/images/works/details/nba_final_2015_5.svg"]
-  }, {
-    "id": 33,
-    "title": "交通安全",
-    "image": "/images/works/traffic_safety.svg",
-    "year": 2015,
-    "type": "graphic",
-    "category": "顧客依頼",
-    "client": "台北市政府",
-    "description": "台北の交通安全政策SNS広告",
-    "tools": ["Adobe Illustrator"]
-  }, {
-    "id": 34,
-    "title": "Ford New Focus",
-    "image": "/images/works/ford_focus_thumb.svg",
-    "year": 2015,
-    "type": "graphic",
-    "category": "顧客依頼",
-    "client": "Ford",
-    "description": "フォード・ニュー・フォーカスのイラスト",
-    "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/ford_focus_1.svg", "/images/works/details/ford_focus_2.svg", "/images/works/details/ford_focus_3.svg"]
-  }, {
-    "id": 35,
-    "title": "アイラ島のウイスキーの威士忌",
-    "image": "/images/works/whisky.svg",
-    "year": 2015,
-    "type": "graphic",
-    "category": "顧客依頼",
-    "client": "非公開",
-    "description": "アイラ島のウイスキーのSNS広告",
-    "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/whisky_1.svg", "/images/works/details/whisky_2.svg", "/images/works/details/whisky_3.svg", "/images/works/details/whisky_4.svg", "/images/works/details/whisky_5.svg", "/images/works/details/whisky_6.svg"]
-  }, {
-    "id": 36,
-    "title": "台湾の炭素排出",
-    "image": "/images/works/gas_tw.svg",
-    "year": 2014,
-    "type": "infographic",
-    "category": "顧客依頼",
-    "client": "台湾環境保護署",
-    "description": "台湾の炭素排出量の統計調査報告デザイン",
-    "tools": ["Adobe Illustrator"]
-  }, {
-    "id": 37,
-    "title": "台湾のがん",
-    "image": "/images/works/cancer_2012.svg",
-    "year": 2013,
-    "type": "infographic",
-    "category": "オリジナル",
-    "description": "台湾がん統計調査報告デザイン",
-    "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/cancer_2012_1.svg", "/images/works/details/cancer_2012_2.svg"]
-  }, {
-    "id": 38,
-    "title": "台湾憲兵",
-    "image": "/images/works/mp_suit_thumb.svg",
-    "year": 2013,
-    "type": "infographic",
-    "category": "オリジナル",
-    "description": "台湾憲兵の紹介イラスト",
-    "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/mp_suit_1.svg", "/images/works/details/mp_suit_2.svg"]
-  }, {
-    "id": 39,
     "title": "EATME",
     "image": "/images/works/eatme.svg",
     "year": 2024,
@@ -391,15 +342,125 @@
     "client": "EATME Inc.",
     "description": "EATMEのパンフレットデザイン",
     "tools": ["Adobe Illustrator"]
-  }, {
-    "id": 40,
-    "title": "スコヴィルスケール",
-    "image": "/images/works/scoville_thumb.svg",
-    "year": 2012,
+  },
+  {
+    "id": 32,
+    "title": "犬ボクサー",
+    "image": "/images/works/dogboxer.jpg",
+    "year": 2024,
+    "type": "illustration",
+    "category": "顧客依頼",
+    "client": "非公開",
+    "description": "ボクサーのプロフィールイラスト",
+    "tools": ["Adobe Photoshop", "Procreate"]
+  },
+  {
+    "id": 33,
+    "title": "データベースとは？",
+    "image": "/images/works/database.svg",
+    "year": 2024,
     "type": "infographic",
     "category": "オリジナル",
-    "description": "スコヴィル値のインフォグラフィックデザイン",
+    "description": "データベースの基礎概念を解説するインフォグラフィック",
     "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/scoville_1.svg"]
+    "detail": ["/images/works/details/database_1.svg", "/images/works/details/database_2.svg", "/images/works/details/database_3.svg", "/images/works/details/database_4.svg"]
+  },
+  {
+    "id": 34,
+    "title": "インターネットの歴史",
+    "image": "/images/works/internet_history.svg",
+    "year": 2024,
+    "type": "infographic",
+    "category": "オリジナル",
+    "description": "インターネットの歴史",
+    "tools": ["Adobe Illustrator"],
+    "detail": ["/images/works/details/internet_history_1.svg", "/images/works/details/internet_history_2.svg", "/images/works/details/internet_history_3.svg", "/images/works/details/internet_history_4.svg", "/images/works/details/internet_history_5.svg"]
+  },
+  {
+    "id": 35,
+    "title": "サムライソウル",
+    "image": "/images/works/samurai_soul_thumb.jpg",
+    "year": 2024,
+    "type": "illustration",
+    "category": "オリジナル",
+    "description": "サムライソウルのアルバムイラスト",
+    "tools": ["Adobe Photoshop", "Procreate"]
+  },
+  {
+    "id": 36,
+    "title": "俺との相性テスト",
+    "image": "/images/works/mytest.jpg",
+    "year": 2024,
+    "type": "web",
+    "category": "オリジナル",
+    "description": "リュウチャーウェイとの相性テストサイト",
+    "link": "https://deepshinjuku.com/test/",
+    "tools": ["JavaScript", "jQuery", "CSS"]
+  },
+  {
+    "id": 37,
+    "title": "MBTIテスト",
+    "image": "/images/works/mbti.jpg",
+    "year": 2024,
+    "type": "web",
+    "category": "オリジナル",
+    "description": "MBTIテストサイト",
+    "link": "https://deepshinjuku.com/mbti/",
+    "tools": ["JavaScript", "CSS"]
+  },
+  {
+    "id": 38,
+    "title": "Deep Shinjuku",
+    "image": "/images/works/deepshinjuku.jpg",
+    "year": 2024,
+    "type": "web",
+    "category": "オリジナル",
+    "description": "新宿の怪談を集めたサイト",
+    "link": "https://deepshinjuku.com/urbanmyth/",
+    "tools": ["PHP", "JavaScript", "CSS"]
+  },
+  {
+    "id": 39,
+    "title": "Ninetendo Timeline",
+    "image": "/images/works/nintendo-timeline.png",
+    "year": 2024,
+    "type": "web",
+    "category": "オリジナル",
+    "description": "任天堂ゲーム機の歴史サイト",
+    "link": "https://nintendo-timeline.vercel.app/",
+    "tools": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion"]
+  },
+  {
+    "id": 40,
+    "title": "世界を変える企業",
+    "image": "/images/works/spinearth.jpg",
+    "year": 2024,
+    "type": "web",
+    "category": "オリジナル",
+    "description": "世界を変える企業のサイト",
+    "link": "https://spinning-earth-opal.vercel.app/",
+    "tools": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion", "Three.js"]
+  },
+  {
+    "id": 41,
+    "title": "Not a shirt",
+    "image": "/images/works/notashirt.png",
+    "year": 2025,
+    "type": "web",
+    "category": "オリジナル",
+    "description": "仮想アパレルブランドサイト",
+    "link": "ecommerce-my-shirt.vercel.app",
+    "tools": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion", "Three.js"]
+  },
+  {
+    "id": 42,
+    "title": "AI Test",
+    "image": "/images/works/aitest.png",
+    "year": 2025,
+    "type": "web",
+    "category": "オリジナル",
+    "description": "AIに関する知識のテスト",
+    "link": "https://ai-swipe-test.vercel.app/",
+    "tools": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion"]
   }
 ]
