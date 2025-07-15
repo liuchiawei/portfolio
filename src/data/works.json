@@ -462,5 +462,16 @@
     "description": "AIに関する知識のテスト",
     "link": "https://ai-swipe-test.vercel.app/",
     "tools": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion"]
+  },
+  {
+    "id": 43,
+    "title": "台北城門物語",
+    "image": "/images/works/gates-to-taipei.png",
+    "year": 2025,
+    "type": "web",
+    "category": "オリジナル",
+    "description": "台北城の五つの城門（承恩門、景福門、麗正門、重熙門、寶成門）を詳しく紹介し、その歴史、建築様式、美しさを網羅的に紹介する完全ガイドです。",
+    "link": "https://gates-to-taipei.vercel.app/",
+    "tools": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion"]
   }
 ]
