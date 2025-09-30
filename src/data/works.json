@@ -484,6 +484,6 @@
     "description": "名作椅子の図鑑です。有名デザイナーの椅子の詳細やストーリーを紹介しています。",
     "link": "https://chair-hub.vercel.app/",
     "tools": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion"],
-    "detail": ["/images/works/details/chairhub-home.png"]
+    "detail": ["/images/works/details/chairhub.png"]
   }
 ]
