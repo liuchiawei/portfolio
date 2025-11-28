@@ -564,7 +564,8 @@
     "category": "オリジナル",
     "description": "台北の五つの城門を詳しく紹介する完全ガイドです。",
     "link": "https://gates-to-taipei.vercel.app/",
-    "tools": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion"]
+    "tools": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion"],
+    "detail": ["/images/works/details/gates_to_taipei_1.png", "/images/works/details/gates_to_taipei_2.png", "/images/works/details/gates_to_taipei_3.png", "/images/works/details/gates_to_taipei_4.png", "/images/works/details/gates_to_taipei_5.png", "/images/works/details/gates_to_taipei_6.png", "/images/works/details/gates_to_taipei_7.png"]
   },
   {
     "id": 44,
