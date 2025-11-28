@@ -481,9 +481,21 @@
     "year": 2025,
     "type": "web",
     "category": "オリジナル",
-    "description": "名作椅子の図鑑です。有名デザイナーの椅子の詳細やストーリーを紹介しています。",
+    "description": "名作椅子の図鑑です。有名デザイナーによる椅子の詳細やストーリーを紹介しています。Apple Watch OSのUIデザインを参考にしています。",
     "link": "https://chair-hub.vercel.app/",
     "tools": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion"],
     "detail": ["/images/works/details/chairhub.png"]
+  },
+  {
+    "id": 45,
+    "title": "HAL幼稚園",
+    "image": "/images/works/hal_kindergarten.png",
+    "year": 2025,
+    "type": "web",
+    "category": "オリジナル",
+    "description": "架空の幼稚園「HAL」の公式サイトです。施設の紹介や教育理念、保護者向けの情報などを掲載しています。施設写真のセクションではFramer Motionを使ったドラッグ可能な3Dギャラリーを実装しています。",
+    "link": "https://hal-kindergarten.vercel.app/",
+    "tools": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion"],
+    "detail": ["/images/works/details/hal_kindergarten_1.png", "/images/works/details/hal_kindergarten_2.png"]
   }
 ]
