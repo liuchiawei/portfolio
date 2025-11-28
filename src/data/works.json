@@ -19,7 +19,10 @@
     "category": "オリジナル",
     "description": "台湾がん統計調査報告デザイン",
     "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/cancer_2012_1.svg", "/images/works/details/cancer_2012_2.svg"]
+    "detail": [
+      "/images/works/details/cancer_2012_1.svg",
+      "/images/works/details/cancer_2012_2.svg"
+    ]
   },
   {
     "id": 3,
@@ -30,7 +33,10 @@
     "category": "オリジナル",
     "description": "台湾憲兵の紹介イラスト",
     "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/mp_suit_1.svg", "/images/works/details/mp_suit_2.svg"]
+    "detail": [
+      "/images/works/details/mp_suit_1.svg",
+      "/images/works/details/mp_suit_2.svg"
+    ]
   },
   {
     "id": 4,
@@ -64,7 +70,13 @@
     "category": "オリジナル",
     "description": "2015年NBAファイナル両チーム戦力の図解",
     "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/nba_final_2015_1.svg", "/images/works/details/nba_final_2015_2.svg", "/images/works/details/nba_final_2015_3.svg", "/images/works/details/nba_final_2015_4.svg", "/images/works/details/nba_final_2015_5.svg"]
+    "detail": [
+      "/images/works/details/nba_final_2015_1.svg",
+      "/images/works/details/nba_final_2015_2.svg",
+      "/images/works/details/nba_final_2015_3.svg",
+      "/images/works/details/nba_final_2015_4.svg",
+      "/images/works/details/nba_final_2015_5.svg"
+    ]
   },
   {
     "id": 7,
@@ -87,7 +99,11 @@
     "client": "Ford",
     "description": "フォード・ニュー・フォーカスのイラスト",
     "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/ford_focus_1.svg", "/images/works/details/ford_focus_2.svg", "/images/works/details/ford_focus_3.svg"]
+    "detail": [
+      "/images/works/details/ford_focus_1.svg",
+      "/images/works/details/ford_focus_2.svg",
+      "/images/works/details/ford_focus_3.svg"
+    ]
   },
   {
     "id": 9,
@@ -99,7 +115,14 @@
     "client": "非公開",
     "description": "アイラ島のウイスキーのSNS広告",
     "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/whisky_1.svg", "/images/works/details/whisky_2.svg", "/images/works/details/whisky_3.svg", "/images/works/details/whisky_4.svg", "/images/works/details/whisky_5.svg", "/images/works/details/whisky_6.svg"]
+    "detail": [
+      "/images/works/details/whisky_1.svg",
+      "/images/works/details/whisky_2.svg",
+      "/images/works/details/whisky_3.svg",
+      "/images/works/details/whisky_4.svg",
+      "/images/works/details/whisky_5.svg",
+      "/images/works/details/whisky_6.svg"
+    ]
   },
   {
     "id": 10,
@@ -121,7 +144,13 @@
     "category": "オリジナル",
     "description": "世界神話の雷神図鑑",
     "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/thundergod_1.svg", "/images/works/details/thundergod_2.svg", "/images/works/details/thundergod_3.svg", "/images/works/details/thundergod_4.svg", "/images/works/details/thundergod_5.svg"]
+    "detail": [
+      "/images/works/details/thundergod_1.svg",
+      "/images/works/details/thundergod_2.svg",
+      "/images/works/details/thundergod_3.svg",
+      "/images/works/details/thundergod_4.svg",
+      "/images/works/details/thundergod_5.svg"
+    ]
   },
   {
     "id": 12,
@@ -132,7 +161,13 @@
     "category": "オリジナル",
     "description": "世界神話の死神図鑑",
     "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/deathgod_1.svg", "/images/works/details/deathgod_2.svg", "/images/works/details/deathgod_3.svg", "/images/works/details/deathgod_4.svg", "/images/works/details/deathgod_5.svg"]
+    "detail": [
+      "/images/works/details/deathgod_1.svg",
+      "/images/works/details/deathgod_2.svg",
+      "/images/works/details/deathgod_3.svg",
+      "/images/works/details/deathgod_4.svg",
+      "/images/works/details/deathgod_5.svg"
+    ]
   },
   {
     "id": 13,
@@ -143,7 +178,14 @@
     "category": "オリジナル",
     "description": "図解台湾のもののけ、魔神仔",
     "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/mononoke-01.svg", "/images/works/details/mononoke-05.svg", "/images/works/details/mononoke-06.svg", "/images/works/details/mononoke-07.svg", "/images/works/details/mononoke-08.svg", "/images/works/details/mononoke-09.svg"]
+    "detail": [
+      "/images/works/details/mononoke-01.svg",
+      "/images/works/details/mononoke-05.svg",
+      "/images/works/details/mononoke-06.svg",
+      "/images/works/details/mononoke-07.svg",
+      "/images/works/details/mononoke-08.svg",
+      "/images/works/details/mononoke-09.svg"
+    ]
   },
   {
     "id": 14,
@@ -165,7 +207,12 @@
     "category": "オリジナル",
     "description": "台北古城門のビジュアルガイド",
     "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/tpe_gate_1.svg", "/images/works/details/tpe_gate_2.svg", "/images/works/details/tpe_gate_3.svg", "/images/works/details/tpe_gate_4.svg"]
+    "detail": [
+      "/images/works/details/tpe_gate_1.svg",
+      "/images/works/details/tpe_gate_2.svg",
+      "/images/works/details/tpe_gate_3.svg",
+      "/images/works/details/tpe_gate_4.svg"
+    ]
   },
   {
     "id": 16,
@@ -187,7 +234,12 @@
     "client": "info2act",
     "description": "世界の観光地における感染症ガイドライン",
     "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/tourguide-01.svg", "/images/works/details/tourguide-02.svg", "/images/works/details/tourguide-03.svg", "/images/works/details/tourguide-04.svg"]
+    "detail": [
+      "/images/works/details/tourguide-01.svg",
+      "/images/works/details/tourguide-02.svg",
+      "/images/works/details/tourguide-03.svg",
+      "/images/works/details/tourguide-04.svg"
+    ]
   },
   {
     "id": 18,
@@ -199,7 +251,12 @@
     "client": "info2act",
     "description": "データ可視化デザイン",
     "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/moon_1.svg", "/images/works/details/moon_2.svg", "/images/works/details/moon_3.svg", "/images/works/details/moon_4.svg"]
+    "detail": [
+      "/images/works/details/moon_1.svg",
+      "/images/works/details/moon_2.svg",
+      "/images/works/details/moon_3.svg",
+      "/images/works/details/moon_4.svg"
+    ]
   },
   {
     "id": 19,
@@ -261,7 +318,14 @@
     "category": "オリジナル",
     "description": "ヨガ動物のイラスト",
     "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/yoga_animal_1.svg", "/images/works/yoga_animal_2.svg", "/images/works/yoga_animal_3.svg", "/images/works/yoga_animal_4.svg", "/images/works/yoga_animal_5.svg", "/images/works/yoga_animal_6.svg"]
+    "detail": [
+      "/images/works/yoga_animal_1.svg",
+      "/images/works/yoga_animal_2.svg",
+      "/images/works/yoga_animal_3.svg",
+      "/images/works/yoga_animal_4.svg",
+      "/images/works/yoga_animal_5.svg",
+      "/images/works/yoga_animal_6.svg"
+    ]
   },
   {
     "id": 25,
@@ -330,7 +394,12 @@
     "client": "拳擊交流同好會",
     "description": "スポーツ選手向け応援イラスト",
     "tools": ["Adobe Photoshop", "Procreate"],
-    "detail": ["/images/works/details/KombatRules-01.png", "/images/works/details/KombatRules-02.png", "/images/works/details/KombatRules-03.png", "/images/works/details/KombatRules-04.png"]
+    "detail": [
+      "/images/works/details/KombatRules-01.png",
+      "/images/works/details/KombatRules-02.png",
+      "/images/works/details/KombatRules-03.png",
+      "/images/works/details/KombatRules-04.png"
+    ]
   },
   {
     "id": 31,
@@ -363,7 +432,12 @@
     "category": "オリジナル",
     "description": "データベースの基礎概念を解説するインフォグラフィック",
     "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/database_1.svg", "/images/works/details/database_2.svg", "/images/works/details/database_3.svg", "/images/works/details/database_4.svg"]
+    "detail": [
+      "/images/works/details/database_1.svg",
+      "/images/works/details/database_2.svg",
+      "/images/works/details/database_3.svg",
+      "/images/works/details/database_4.svg"
+    ]
   },
   {
     "id": 34,
@@ -374,7 +448,13 @@
     "category": "オリジナル",
     "description": "インターネットの歴史",
     "tools": ["Adobe Illustrator"],
-    "detail": ["/images/works/details/internet_history_1.svg", "/images/works/details/internet_history_2.svg", "/images/works/details/internet_history_3.svg", "/images/works/details/internet_history_4.svg", "/images/works/details/internet_history_5.svg"]
+    "detail": [
+      "/images/works/details/internet_history_1.svg",
+      "/images/works/details/internet_history_2.svg",
+      "/images/works/details/internet_history_3.svg",
+      "/images/works/details/internet_history_4.svg",
+      "/images/works/details/internet_history_5.svg"
+    ]
   },
   {
     "id": 35,
@@ -439,7 +519,13 @@
     "category": "オリジナル",
     "description": "世界を変える企業のサイト",
     "link": "https://spinning-earth-opal.vercel.app/",
-    "tools": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion", "Three.js"]
+    "tools": [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Framer Motion",
+      "Three.js"
+    ]
   },
   {
     "id": 41,
@@ -450,7 +536,13 @@
     "category": "オリジナル",
     "description": "仮想アパレルブランドサイト",
     "link": "https://ecommerce-my-shirt.vercel.app",
-    "tools": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion", "Three.js"]
+    "tools": [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Framer Motion",
+      "Three.js"
+    ]
   },
   {
     "id": 42,
@@ -496,6 +588,25 @@
     "description": "架空の幼稚園「HAL」の公式サイトです。施設の紹介や教育理念、保護者向けの情報などを掲載しています。施設写真のセクションではFramer Motionを使ったドラッグ可能な3Dギャラリーを実装しています。",
     "link": "https://hal-kindergarten.vercel.app/",
     "tools": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion"],
-    "detail": ["/images/works/details/hal_kindergarten_1.png", "/images/works/details/hal_kindergarten_2.png"]
+    "detail": [
+      "/images/works/details/hal_kindergarten_1.png",
+      "/images/works/details/hal_kindergarten_2.png"
+    ]
+  },
+  {
+    "id": 46,
+    "title": "拳交會",
+    "image": "/images/works/boxing_exchange.png",
+    "year": 2025,
+    "type": "web",
+    "category": "顧客依頼",
+    "description": "台湾PODCAST番組「拳交會」の公式サイトです。番組のPODCASTリスト、メンバー紹介などを掲載しています。",
+    "link": "https://boxing-exchange.vercel.app/",
+    "tools": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion"],
+    "detail": [
+      "/images/works/details/boxing_exchange_1.png",
+      "/images/works/details/boxing_exchange_2.png",
+      "/images/works/details/boxing_exchange_3.png"
+    ]
   }
 ]
