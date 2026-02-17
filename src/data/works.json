@@ -609,5 +609,21 @@
       "/images/works/details/boxing_exchange_2.png",
       "/images/works/details/boxing_exchange_3.png"
     ]
+  },
+  {
+    "id": 47,
+    "title": "東京の音",
+    "image": "/images/works/tokyo_sounds.png",
+    "year": 2025,
+    "type": "web",
+    "category": "オリジナル",
+    "description": "3Dモデル、AI生成音楽、体感操作を用いて東京の日常音を再現するデジタル体験です。",
+    "link": "https://tokyo-sounds.vercel.app/",
+    "tools": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion", "Three.js", "React Three Fiber", "Mediapipe", "Tone.js", "Google Lyria"],
+    "detail": [
+      "/images/works/details/tokyo_sounds_1.png",
+      "/images/works/details/tokyo_sounds_2.png",
+      "/images/works/details/tokyo_sounds_3.png"
+    ]
   }
 ]
