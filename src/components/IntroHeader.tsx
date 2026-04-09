@@ -31,7 +31,6 @@ export default function IntroHeader() {
             bounce: 0.6,
             delay: 0.4,
             duration: 1,
-            custom: 0,
           }}
           className="absolute bottom-0 left-0 w-full h-full flex justify-center items-center z-10"
         >
