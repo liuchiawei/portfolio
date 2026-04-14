@@ -625,5 +625,22 @@
       "/images/works/details/tokyo_sounds_2.png",
       "/images/works/details/tokyo_sounds_3.png"
     ]
+  },
+  {
+    "id": 48,
+    "title": "Open UI",
+    "image": "/images/works/open-ui.png",
+    "year": 2026,
+    "type": "web",
+    "category": "オリジナル",
+    "description": "3Dモデル、AI生成音楽、体感操作を用いて東京の日常音を再現するデジタル体験です。",
+    "link": "https://opensource-ui.vercel.app/",
+    "tools": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion", "Three.js", "React Three Fiber"],
+    "detail": [
+      "/images/works/details/open-ui_1.png",
+      "/images/works/details/open-ui_2.png",
+      "/images/works/details/open-ui_3.png",
+      "/images/works/details/open-ui_4.png"
+    ]
   }
 ]
